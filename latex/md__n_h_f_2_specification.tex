@@ -1,0 +1,28 @@
+\chapter{Specification}
+\hypertarget{md__n_h_f_2_specification}{}\label{md__n_h_f_2_specification}\index{Specification@{Specification}}
+Programozás 1 -\/ Nagy Házi Specifikáció -\/ Szihalmi Botond L1\+U7\+KJ \hypertarget{md__n_h_f_2_specification_autotoc_md10}{}\doxysection{\texorpdfstring{Source to Flow specifikáció}{Source to Flow specifikáció}}\label{md__n_h_f_2_specification_autotoc_md10}
+Én egy saját ötlet alapján kezdtem el dolgozni a nagy házimon. \textbackslash{} A célja hogy egy beolvasott c source fileból egy megjeleníthető folyamat ábrát hozzon létre.\textbackslash{} A programot mind parancssorból mind grafikus felülettel lehet irányítani.\hypertarget{md__n_h_f_2_specification_autotoc_md11}{}\doxysubsection{\texorpdfstring{Parancssori irányítás}{Parancssori irányítás}}\label{md__n_h_f_2_specification_autotoc_md11}
+Itt nem tényleges irányítás történik, csak adott lehetőségek vannak a meghívás alatt\+:
+\begin{DoxyItemize}
+\item help
+\item theme
+\item output file
+\item input file
+\end{DoxyItemize}
+
+Ha semmilyen meghívási paraméter nincs megadva csak megnyitja a program grafikus felületét. \textbackslash{} Ha meg van adva a bemeneti file, azt a file-\/ot nyitja meg a grafikus felületen \textbackslash{} Ha bemeneti és kimeneti file is meg van adva, rögtön kimenti a folyamat ábra képét. \textbackslash{} A téma paraméter ezeknek a működését nem érinti. \textbackslash{} A help paraméter csak kiírja hogyan kell a parancssori irányítást használni.\hypertarget{md__n_h_f_2_specification_autotoc_md12}{}\doxysubsection{\texorpdfstring{Grafikus Irányítás}{Grafikus Irányítás}}\label{md__n_h_f_2_specification_autotoc_md12}
+\href{https://app.moqups.com/brleEga77fA5GRgd3TpBNSpikZaXF3zO/view/page/ad64222d5}{\texttt{ Felső menü}}\textbackslash{} \href{https://app.moqups.com/brleEga77fA5GRgd3TpBNSpikZaXF3zO/view/page/a09b4f337}{\texttt{ Folyamat ábra}}
+
+Egér irányítás\+:
+\begin{DoxyItemize}
+\item görgővel lehet a folyamat ábrán belül nagyítani, kisebbíteni.
+\item lenyomva tartva lehet vele mozogni jobbra, balra, fel, le.
+\item bal kattintással lehet mozgatni a folyamat ábra pontjait.
+\end{DoxyItemize}\hypertarget{md__n_h_f_2_specification_autotoc_md13}{}\doxysubsection{\texorpdfstring{Témák}{Témák}}\label{md__n_h_f_2_specification_autotoc_md13}
+Saját témát lehet megadni {\ttfamily .ini} file-\/ként. \textbackslash{} Mindegyik típusú objektumhoz (beleértve a fő képernyőt is) külön témát kell megadni. \textbackslash{} Egy objektumhoz két színérték tartozik\+:
+\begin{DoxyItemize}
+\item háttér
+\item szöveg
+\end{DoxyItemize}\hypertarget{md__n_h_f_2_specification_autotoc_md14}{}\doxysubsection{\texorpdfstring{File mentés}{File mentés}}\label{md__n_h_f_2_specification_autotoc_md14}
+A létrehozott folyamati ábrát vagy {\ttfamily .png} vagy {\ttfamily .jpg}-\/ként lehet elmenteni. \textbackslash{} A mentett file nevét és helyét a felhasználó adja meg. \textbackslash{} A mentett file a használt téma alapján legyen színezve.\hypertarget{md__n_h_f_2_specification_autotoc_md15}{}\doxysubsection{\texorpdfstring{Kilépés}{Kilépés}}\label{md__n_h_f_2_specification_autotoc_md15}
+Kilépésnél rákérdezünk a felhasználóra hogy biztos meg szeretné e tenni, de automatikusan nem mentünk semmit. 

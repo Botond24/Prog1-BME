@@ -1,0 +1,176 @@
+\doxysection{NHF/main.c File Reference}
+\hypertarget{_n_h_f_2main_8c}{}\label{_n_h_f_2main_8c}\index{NHF/main.c@{NHF/main.c}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_n_h_f_2main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_n_h_f_2main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Obvious. \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{_n_h_f_2main_8c_a6a1c9ed9c8c0a132714ea93ce99d4b46}{Get\+Hwnd}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window)
+\begin{DoxyCompactList}\small\item\em Gets win32 window handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_h_f_2main_8c_ae6939078c6951a9a25608ac4455be10a}{Activate\+Menu}} (HWND window\+Ref)
+\begin{DoxyCompactList}\small\item\em Creates a menu for the given window handle. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_n_h_f_2main_8c_af231d71eea90de41925b73d1065f745c}{file\+\_\+open\+\_\+dialog}} (HWND window\+Ref)
+\begin{DoxyCompactList}\small\item\em Creates a file open dialog for opening source files. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_n_h_f_2main_8c_a420813798480577b292157dcd463e8f2}{file\+\_\+save\+\_\+dialog}} (HWND window\+Ref)
+\begin{DoxyCompactList}\small\item\em Creates a file save dialog for saving image files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_n_h_f_2main_8c_ae6939078c6951a9a25608ac4455be10a}\label{_n_h_f_2main_8c_ae6939078c6951a9a25608ac4455be10a} 
+\index{main.c@{main.c}!ActivateMenu@{ActivateMenu}}
+\index{ActivateMenu@{ActivateMenu}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ActivateMenu()}{ActivateMenu()}}
+{\footnotesize\ttfamily void Activate\+Menu (\begin{DoxyParamCaption}\item[{HWND}]{window\+Ref }\end{DoxyParamCaption})}
+
+
+
+Creates a menu for the given window handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Ref} & win32 window handle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_n_h_f_2main_8c_source_l00110}{110}} of file \mbox{\hyperlink{_n_h_f_2main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_n_h_f_2main_8c_ae6939078c6951a9a25608ac4455be10a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_n_h_f_2main_8c_af231d71eea90de41925b73d1065f745c}\label{_n_h_f_2main_8c_af231d71eea90de41925b73d1065f745c} 
+\index{main.c@{main.c}!file\_open\_dialog@{file\_open\_dialog}}
+\index{file\_open\_dialog@{file\_open\_dialog}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{file\_open\_dialog()}{file\_open\_dialog()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} file\+\_\+open\+\_\+dialog (\begin{DoxyParamCaption}\item[{HWND}]{window\+Ref }\end{DoxyParamCaption})}
+
+
+
+Creates a file open dialog for opening source files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Ref} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file to open 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_n_h_f_2main_8c_source_l00132}{132}} of file \mbox{\hyperlink{_n_h_f_2main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{_n_h_f_2main_8c_af231d71eea90de41925b73d1065f745c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_n_h_f_2main_8c_a420813798480577b292157dcd463e8f2}\label{_n_h_f_2main_8c_a420813798480577b292157dcd463e8f2} 
+\index{main.c@{main.c}!file\_save\_dialog@{file\_save\_dialog}}
+\index{file\_save\_dialog@{file\_save\_dialog}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{file\_save\_dialog()}{file\_save\_dialog()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} file\+\_\+save\+\_\+dialog (\begin{DoxyParamCaption}\item[{HWND}]{window\+Ref }\end{DoxyParamCaption})}
+
+
+
+Creates a file save dialog for saving image files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Ref} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file to save 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_n_h_f_2main_8c_source_l00179}{179}} of file \mbox{\hyperlink{_n_h_f_2main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{_n_h_f_2main_8c_a420813798480577b292157dcd463e8f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_n_h_f_2main_8c_a6a1c9ed9c8c0a132714ea93ce99d4b46}\label{_n_h_f_2main_8c_a6a1c9ed9c8c0a132714ea93ce99d4b46} 
+\index{main.c@{main.c}!GetHwnd@{GetHwnd}}
+\index{GetHwnd@{GetHwnd}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{GetHwnd()}{GetHwnd()}}
+{\footnotesize\ttfamily HWND Get\+Hwnd (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
+
+
+
+Gets win32 window handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & sdl window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+win32 window handle 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_n_h_f_2main_8c_source_l00104}{104}} of file \mbox{\hyperlink{_n_h_f_2main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{_n_h_f_2main_8c_a6a1c9ed9c8c0a132714ea93ce99d4b46_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_n_h_f_2main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{_n_h_f_2main_8c_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+
+
+Obvious. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_n_h_f_2main_8c_source_l00003}{3}} of file \mbox{\hyperlink{_n_h_f_2main_8c_source}{main.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{_n_h_f_2main_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}

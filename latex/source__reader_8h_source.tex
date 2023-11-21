@@ -1,0 +1,52 @@
+\doxysection{source\+\_\+reader.\+h}
+\hypertarget{source__reader_8h_source}{}\label{source__reader_8h_source}\index{NHF/source\_reader.h@{NHF/source\_reader.h}}
+\mbox{\hyperlink{source__reader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ sziha\ on\ 21/10/2023.}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ NHF\_SOURCE\_READER\_H}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ NHF\_SOURCE\_READER\_H}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ini__reader_8h}{ini\_reader.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_n_h_f_2debugmalloc_8h}{debugmalloc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00011}\mbox{\hyperlink{structfunc__type__t}{00011}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00012}\mbox{\hyperlink{structfunc__type__t_ad9ae5a1f3c5484328f0ea07d12852133}{00012}}\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structfunc__type__t_ad9ae5a1f3c5484328f0ea07d12852133}{return\_type}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00013}\mbox{\hyperlink{structfunc__type__t_aa24f72e6a4d6a997528142211b375496}{00013}}\ \ \ \ \ \textcolor{keywordtype}{char}\ **\mbox{\hyperlink{structfunc__type__t_aa24f72e6a4d6a997528142211b375496}{args}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00014}00014\ \}\ \mbox{\hyperlink{structfunc__type__t}{func\_type\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00016}\mbox{\hyperlink{structstruct__type__t}{00016}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00017}\mbox{\hyperlink{structstruct__type__t_a0bd887c941dfeb4a13ee1501df2df62d}{00017}}\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structstruct__type__t_a0bd887c941dfeb4a13ee1501df2df62d}{args}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00018}00018\ \}\ \mbox{\hyperlink{structstruct__type__t}{struct\_type\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00020}\mbox{\hyperlink{structvariable__type__t}{00020}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00021}\mbox{\hyperlink{structvariable__type__t_a4e9aec275e566b978a3ccb4e043d8c61}{00021}}\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structvariable__type__t_a4e9aec275e566b978a3ccb4e043d8c61}{value}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00022}00022\ \}\ \mbox{\hyperlink{structvariable__type__t}{variable\_type\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00024}\mbox{\hyperlink{structconditional__type__t}{00024}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00025}\mbox{\hyperlink{structconditional__type__t_abd64a6ef068758ff37298accc5a55033}{00025}}\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structconditional__type__t_abd64a6ef068758ff37298accc5a55033}{condition}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00026}00026\ \}\ \mbox{\hyperlink{structconditional__type__t}{conditional\_type\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00028}\mbox{\hyperlink{structloop__type__t}{00028}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00029}\mbox{\hyperlink{structloop__type__t_abd64a6ef068758ff37298accc5a55033}{00029}}\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structloop__type__t_abd64a6ef068758ff37298accc5a55033}{condition}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00030}00030\ \}\ \mbox{\hyperlink{structloop__type__t}{loop\_type\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00034}\mbox{\hyperlink{structnode}{00034}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structnode}{node}}\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00035}\mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{00035}}\ \ \ \ \ \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}{context\_e}}\ \mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{type}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00036}\mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{00036}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}[100];}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{union\ }\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00038}\mbox{\hyperlink{structnode_a5b8f3a301bf29f32d69084e37beabeb6}{00038}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structfunc__type__t}{func\_type\_t}}\ \mbox{\hyperlink{structnode_a5b8f3a301bf29f32d69084e37beabeb6}{func}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00039}\mbox{\hyperlink{structnode_afcf20610c33b05a225ba006e93c3ad36}{00039}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structstruct__type__t}{struct\_type\_t}}\ \mbox{\hyperlink{structnode_afcf20610c33b05a225ba006e93c3ad36}{struct\_}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00040}\mbox{\hyperlink{structnode_afd266f5928cb58227169d821a02a9646}{00040}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structvariable__type__t}{variable\_type\_t}}\ \mbox{\hyperlink{structnode_afd266f5928cb58227169d821a02a9646}{variable}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00041}\mbox{\hyperlink{structnode_a626044211bec94a3ec999f9d723bfc18}{00041}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structconditional__type__t}{conditional\_type\_t}}\ \mbox{\hyperlink{structnode_a626044211bec94a3ec999f9d723bfc18}{conditional}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00042}\mbox{\hyperlink{structnode_a38357d501723a2a27c7dadc6639fac8d}{00042}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structloop__type__t}{loop\_type\_t}}\ \mbox{\hyperlink{structnode_a38357d501723a2a27c7dadc6639fac8d}{loop}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00043}00043\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00044}\mbox{\hyperlink{structnode_a51695a823cbcb573d6cf50043a5adb1a}{00044}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structnode_a51695a823cbcb573d6cf50043a5adb1a}{list\_size}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00045}\mbox{\hyperlink{structnode_ab78b6b14efcfbad31cbc9da31cdcea47}{00045}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structnode}{node}}\ **\mbox{\hyperlink{structnode_ab78b6b14efcfbad31cbc9da31cdcea47}{nextList}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00046}\mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{00046}}\ \}\ \mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{node\_t}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00052}00052\ \mbox{\hyperlink{structnode}{node\_t}}\ *\mbox{\hyperlink{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328}{read\_source}}(\textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00060}00060\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{source__reader_8h_a37e8209ccc1457f8b132a9d148023a0f}{substr}}(\textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *str,\ \textcolor{keywordtype}{char}\ start,\ \textcolor{keywordtype}{char}\ end);}
+\DoxyCodeLine{\Hypertarget{source__reader_8h_source_l00061}00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//NHF\_SOURCE\_READER\_H}}
+
+\end{DoxyCode}

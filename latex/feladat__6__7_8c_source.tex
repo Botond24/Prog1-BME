@@ -1,0 +1,27 @@
+\doxysection{feladat\+\_\+6\+\_\+7.\+c}
+\hypertarget{feladat__6__7_8c_source}{}\label{feladat__6__7_8c_source}\index{Labor/lab\_6/feladat\_6\_7.c@{Labor/lab\_6/feladat\_6\_7.c}}
+\mbox{\hyperlink{feladat__6__7_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00004}\mbox{\hyperlink{feladat__6__7_8c_a840291bc02cba5474a4cb46a9b9566fe}{00004}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{feladat__6__7_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00006}00006\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ szamok[9]\ =\ \{\ 0U,\ 1931988508U,\ 581177634U,\ 581374240U,}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00007}00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 581177632U,\ 581177634U,\ 1919159836U,\ 0U,\ \ 65535U|\string~65535U\};}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00008}00008\ \ \ \ \ \textcolor{comment}{/*szamok[0]\ =\ szamok[0]\ \&\ 65535;}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00009}00009\ \textcolor{comment}{\ \ \ \ szamok[1]\ =\ szamok[1]\ \&\ \string~65535;}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00010}00010\ \textcolor{comment}{\ \ \ \ szamok[2]\ =\ szamok[2]\ |\ 65535;}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00011}00011\ \textcolor{comment}{\ \ \ \ szamok[3]\ =\ szamok[3]\ |\ \string~65535;}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00012}00012\ \textcolor{comment}{\ \ \ \ szamok[4]\ =\ szamok[4]\ \string^\ 65535;}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00013}00013\ \textcolor{comment}{\ \ \ \ szamok[5]\ =\ szamok[5]\ \string^\ \string~65535;*/}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 9;\ i++)\{}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ 32;\ j++)\{}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%c"{}},\ (szamok[i]\ \&\ (\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int})\ 1)\ ?\ \textcolor{charliteral}{'\#'}:\textcolor{charliteral}{'\ '});\ \textcolor{comment}{//\ prints\ LSB\ (least\ significant\ bit\ first)}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ szamok[i]\ >>=\ 1;}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__6__7_8c_source_l00021}00021\ \}}
+
+\end{DoxyCode}

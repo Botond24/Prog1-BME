@@ -1,0 +1,137 @@
+\doxysection{NHF/source\+\_\+reader.h File Reference}
+\hypertarget{source__reader_8h}{}\label{source__reader_8h}\index{NHF/source\_reader.h@{NHF/source\_reader.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}ini\+\_\+reader.\+h"{}}\newline
+{\ttfamily \#include "{}debugmalloc.\+h"{}}\newline
+Include dependency graph for source\+\_\+reader.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{source__reader_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{source__reader_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfunc__type__t}{func\+\_\+type\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structstruct__type__t}{struct\+\_\+type\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structvariable__type__t}{variable\+\_\+type\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structconditional__type__t}{conditional\+\_\+type\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structloop__type__t}{loop\+\_\+type\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structnode}{node}}
+\begin{DoxyCompactList}\small\item\em linked list structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structnode}{node}} \mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{node\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em linked list structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{node\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328}{read\+\_\+source}} (char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em NOT FULLY IMPLEMENTED YET. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source__reader_8h_a37e8209ccc1457f8b132a9d148023a0f}{substr}} (char const \texorpdfstring{$\ast$}{*}str, char start, char end)
+\begin{DoxyCompactList}\small\item\em Returns a substirng from the first appearance of start until the first appearance of end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}\label{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9} 
+\index{source\_reader.h@{source\_reader.h}!node\_t@{node\_t}}
+\index{node\_t@{node\_t}!source\_reader.h@{source\_reader.h}}
+\doxysubsubsection{\texorpdfstring{node\_t}{node\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structnode}{node}} \mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{node\+\_\+t}}}
+
+
+
+linked list structure 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328}\label{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328} 
+\index{source\_reader.h@{source\_reader.h}!read\_source@{read\_source}}
+\index{read\_source@{read\_source}!source\_reader.h@{source\_reader.h}}
+\doxysubsubsection{\texorpdfstring{read\_source()}{read\_source()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{source__reader_8h_a7c02633e18d6aa5f58539b75f08753d9}{node\+\_\+t}} \texorpdfstring{$\ast$}{*} read\+\_\+source (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+NOT FULLY IMPLEMENTED YET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+\_\+file} & to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+linked\+\_\+list of all the lines 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{source__reader_8c_source_l00007}{7}} of file \mbox{\hyperlink{source__reader_8c_source}{source\+\_\+reader.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{source__reader_8h_afabc9f7d62d71d56c4aa2d51d0045328_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{source__reader_8h_a37e8209ccc1457f8b132a9d148023a0f}\label{source__reader_8h_a37e8209ccc1457f8b132a9d148023a0f} 
+\index{source\_reader.h@{source\_reader.h}!substr@{substr}}
+\index{substr@{substr}!source\_reader.h@{source\_reader.h}}
+\doxysubsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} substr (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str,  }\item[{char}]{start,  }\item[{char}]{end }\end{DoxyParamCaption})}
+
+
+
+Returns a substirng from the first appearance of start until the first appearance of end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em start} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Substring from start char (inclusive) to end char (non inclusive) 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{source__reader_8c_source_l00072}{72}} of file \mbox{\hyperlink{source__reader_8c_source}{source\+\_\+reader.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{source__reader_8h_a37e8209ccc1457f8b132a9d148023a0f_icgraph}
+\end{center}
+\end{figure}

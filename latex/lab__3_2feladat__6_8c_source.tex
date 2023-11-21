@@ -1,0 +1,69 @@
+\doxysection{feladat\+\_\+6.\+c}
+\hypertarget{lab__3_2feladat__6_8c_source}{}\label{lab__3_2feladat__6_8c_source}\index{Labor/lab\_3/feladat\_6.c@{Labor/lab\_3/feladat\_6.c}}
+\mbox{\hyperlink{lab__3_2feladat__6_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00002}00002\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00003}\mbox{\hyperlink{struct_datum}{00003}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_datum}{Datum}}\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00004}\mbox{\hyperlink{struct_datum_ae2e5233fba5d49c6d267817c8eb91868}{00004}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_datum_ae2e5233fba5d49c6d267817c8eb91868}{ev}},\ \mbox{\hyperlink{struct_datum_aeb61ed00e714d65c42b93b337a223571}{ho}},\ \mbox{\hyperlink{struct_datum_a4fe6d244f17b01655e08e3733bf54559}{nap}};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00005}\mbox{\hyperlink{lab__3_2feladat__6_8c_a8b7df2d66a30bafa9f16adfd2812c9b6}{00005}}\ \}\ \mbox{\hyperlink{struct_datum}{Datum}};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00006}00006\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00007}\mbox{\hyperlink{struct_versenyzo}{00007}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_versenyzo}{Versenyzo}}\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00008}\mbox{\hyperlink{struct_versenyzo_aee16fbd725e783e41e6a8d8087c93bc7}{00008}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_versenyzo_aee16fbd725e783e41e6a8d8087c93bc7}{nev}}[31];}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00009}\mbox{\hyperlink{struct_versenyzo_ae39bb8641294f1cb768b9ea55e9d667f}{00009}}\ \ \ \ \ \mbox{\hyperlink{struct_datum}{Datum}}\ \mbox{\hyperlink{struct_versenyzo_ae39bb8641294f1cb768b9ea55e9d667f}{szuletes}};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00010}\mbox{\hyperlink{struct_versenyzo_a392057e4ae77c8f1872a65a8414565a2}{00010}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_versenyzo_a392057e4ae77c8f1872a65a8414565a2}{helyezes}};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00011}\mbox{\hyperlink{lab__3_2feladat__6_8c_a65edfab44838eebc6389c4eb56837a1d}{00011}}\ \}\ \mbox{\hyperlink{struct_versenyzo}{Versenyzo}};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00012}00012\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00013}00013\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__3_2feladat__6_8c_a4ba922a94820831a3fa53e92caa4626a}{datum\_kiir}}(\mbox{\hyperlink{struct_datum}{Datum}}\ d);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00014}00014\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00015}00015\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__3_2feladat__6_8c_a2ac87d45b2f1c48ebef16e39e620be0f}{versenyzo\_kiir}}(\mbox{\hyperlink{struct_versenyzo}{Versenyzo}}\ v);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00016}00016\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00017}\mbox{\hyperlink{lab__3_2feladat__6_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00017}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lab__2_2feladat__6_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{struct_versenyzo}{Versenyzo}}\ versenyzok[5]\ =\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}Am\ Erika"{}},\ \{1984,\ 5,\ 6\},\ 1\ \},}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00020}00020\ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}Break\ Elek"{}},\ \{1982,\ 9,\ 30\},\ 3\ \},}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00021}00021\ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}Dil\ Emma"{}},\ \{1988,\ 8,\ 25\},\ 2\ \},}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00022}00022\ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}Kasza\ Blanka"{}},\ \{1979,\ 6,\ 10\},\ 5\ \},}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00023}00023\ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}Reset\ Elek"{}},\ \{1992,\ 4,\ 5\},\ 4\ \},}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00024}00024\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00025}00025\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00026}00026\ \ \ \ \ \textcolor{comment}{/*\ 0-\/s\ versenyző\ neve\ -\/\ printf\ \%s\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00027}00027\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ versenyzok[0].nev);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00028}00028\ \ \ \ \ \textcolor{comment}{/*\ 2-\/es\ versenyző\ helyezése\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00029}00029\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\ versenyzok[2].helyezes);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00030}00030\ \ \ \ \ \textcolor{comment}{/*\ 4-\/es\ versenyző\ születési\ dátumát\ (írd\ meg\ a\ datum\_kiir\ függvényt!)\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{lab__3_2feladat__6_8c_a4ba922a94820831a3fa53e92caa4626a}{datum\_kiir}}(versenyzok[4].szuletes);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00032}00032\ \ \ \ \ \textcolor{comment}{/*\ 1-\/es\ versenyző\ nevének\ kezdőbetűjét\ (ne\ feledd,\ a\ sztring\ karaktertömb)\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00033}00033\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%c\(\backslash\)n"{}},versenyzok[1].nev[0]);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00034}00034\ \ \ \ \ \textcolor{comment}{/*\ az\ 1-\/es\ versenyző\ dobogós-\/e?\ igen/nem,\ akár\ ?:\ operátorral,\ de\ egy\ printf-\/fel\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00035}00035\ \ \ \ \ printf(\textcolor{stringliteral}{"{}1-\/es\ versenyzo\ dobogos-\/e:\ \%s\(\backslash\)n"{}},\ versenyzok[1].helyezes\ <=\ 3\ ?\ \textcolor{stringliteral}{"{}igen"{}}:\textcolor{stringliteral}{"{}nem"{}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00036}00036\ \ \ \ \ \textcolor{comment}{/*\ az\ 4-\/es\ versenyző\ gyorsabb-\/e,\ mint\ a\ 3-\/as\ versenyző?\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00037}00037\ \ \ \ \ printf(\textcolor{stringliteral}{"{}4-\/es\ versenyzo\ gyorsabb-\/e\ mint\ a\ 3-\/as:\ \%s\(\backslash\)n"{}},\ versenyzok[4].helyezes\ >\ versenyzok[3].helyezes\ ?\ \textcolor{stringliteral}{"{}igen"{}}\ :\ \textcolor{stringliteral}{"{}nem"{}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00038}00038\ \ \ \ \ \textcolor{comment}{/*\ az\ 1-\/es\ versenyző\ ugyanabban\ az\ évben\ született-\/e,\ mint\ a\ 2-\/es?\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00039}00039\ \ \ \ \ printf(\textcolor{stringliteral}{"{}1-\/es\ versenyzo\ ugyanabban\ az\ évben\ született-\/e,\ mint\ a\ 2-\/es:\ \%s\(\backslash\)n"{}},\ versenyzok[1].szuletes.ev\ ==\ versenyzok[2].\mbox{\hyperlink{struct_versenyzo_ae39bb8641294f1cb768b9ea55e9d667f}{szuletes}}.\mbox{\hyperlink{struct_datum_ae2e5233fba5d49c6d267817c8eb91868}{ev}}\ ?\ \textcolor{stringliteral}{"{}igen"{}}\ :\ \textcolor{stringliteral}{"{}nem"{}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00040}00040\ \ \ \ \ \textcolor{comment}{/*\ egészítsd\ ki\ a\ versenyzo\_kiir()\ függvényt,}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ *\ aztán\ írd\ ki\ az\ 1-\/es\ versenyző\ összes\ adatát\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{lab__3_2feladat__6_8c_a2ac87d45b2f1c48ebef16e39e620be0f}{versenyzo\_kiir}}(versenyzok[1]);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00043}00043\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00044}00044\ \ \ \ \ \textcolor{comment}{/*\ végül\ listázd\ ki\ az\ összes\ versenyzőt\ sorszámozva,\ összes\ adatukkal.\ */}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 5;\ i++)}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00046}00046\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\ |\ "{}},\ i);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00048}00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{lab__3_2feladat__6_8c_a2ac87d45b2f1c48ebef16e39e620be0f}{versenyzo\_kiir}}(versenyzok[i]);}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00049}00049\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00051}00051\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00054}00054\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00055}\mbox{\hyperlink{lab__3_2feladat__6_8c_a4ba922a94820831a3fa53e92caa4626a}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__3_2feladat__6_8c_a4ba922a94820831a3fa53e92caa4626a}{datum\_kiir}}(\mbox{\hyperlink{struct_datum}{Datum}}\ d)\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00056}00056\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d.\ \%d.\ \%d."{}},d.\mbox{\hyperlink{struct_datum_ae2e5233fba5d49c6d267817c8eb91868}{ev}},d.\mbox{\hyperlink{struct_datum_aeb61ed00e714d65c42b93b337a223571}{ho}},d.\mbox{\hyperlink{struct_datum_a4fe6d244f17b01655e08e3733bf54559}{nap}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00058}00058\ \ }
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00059}\mbox{\hyperlink{lab__3_2feladat__6_8c_a2ac87d45b2f1c48ebef16e39e620be0f}{00059}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__3_2feladat__6_8c_a2ac87d45b2f1c48ebef16e39e620be0f}{versenyzo\_kiir}}(\mbox{\hyperlink{struct_versenyzo}{Versenyzo}}\ v)\ \{}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00060}00060\ \ \ \ printf(\textcolor{stringliteral}{"{}\%s\ |\ "{}},\ v.\mbox{\hyperlink{struct_versenyzo_aee16fbd725e783e41e6a8d8087c93bc7}{nev}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00061}00061\ \ \ \ \mbox{\hyperlink{lab__3_2feladat__6_8c_a4ba922a94820831a3fa53e92caa4626a}{datum\_kiir}}(v.\mbox{\hyperlink{struct_versenyzo_ae39bb8641294f1cb768b9ea55e9d667f}{szuletes}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00062}00062\ \ \ \ printf(\textcolor{stringliteral}{"{}\ |\ \%d"{}},v.\mbox{\hyperlink{struct_versenyzo_a392057e4ae77c8f1872a65a8414565a2}{helyezes}});}
+\DoxyCodeLine{\Hypertarget{lab__3_2feladat__6_8c_source_l00063}00063\ \}}
+
+\end{DoxyCode}

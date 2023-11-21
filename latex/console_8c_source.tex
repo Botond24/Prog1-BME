@@ -1,0 +1,62 @@
+\doxysection{console.\+c}
+\hypertarget{console_8c_source}{}\label{console_8c_source}\index{NHF/console.c@{NHF/console.c}}
+\mbox{\hyperlink{console_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ sziha\ on\ 16/10/2023.}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{console_8h}{console.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00008}\mbox{\hyperlink{console_8c_aeb8a47506a58dab30b4ecfe367b018d6}{00008}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{console_8c_aeb8a47506a58dab30b4ecfe367b018d6}{init\_console}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv,\ \textcolor{keywordtype}{char}*\ theme\_file,\ \textcolor{keywordtype}{char}*\ output\_file,\ \textcolor{keywordtype}{char}*\ in\_file)\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{int}\ c;}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00010}00010\ \ \ \ \ \textcolor{keywordflow}{while}\ ((c\ =\ getopt(argc,argv,\textcolor{stringliteral}{"{}:o:t:h"{}}))\ !=\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (c)\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'t'}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ strcpy(theme\_file,\ optarg);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'h'}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Usage:\ console\ -\/t\ <theme\_file>\ -\/o\ <output\_file>\ -\/i\ <input\_file>\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \ -\/1;}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'o'}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ strcpy(output\_file,\ optarg);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{':'}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ strcpy(in\_file,\ optarg);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'?'}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (optopt\ ==\ \textcolor{charliteral}{'o'})\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Option\ -\/\%c\ requires\ an\ argument.\(\backslash\)n"{}},\ optopt);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (optopt\ ==\ \textcolor{charliteral}{'t'})\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Option\ -\/\%c\ requires\ an\ argument.\(\backslash\)n"{}},\ optopt);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Unknown\ option\ \`{}-\/\%c'.\(\backslash\)n"{}},\ optopt);}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00039}\mbox{\hyperlink{console_8c_ad2371701651582a5a09707a11c1aeafa}{00039}}\ \mbox{\hyperlink{types_8h_aca66d0ced35dbef8a9d4aaf398baff6d}{file\_type\_e}}\ \mbox{\hyperlink{console_8c_ad2371701651582a5a09707a11c1aeafa}{ends\_with}}(\textcolor{keywordtype}{char}*\ file)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00040}00040\ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{char}*\ fileExt\ =\ strrchr(file,\ \textcolor{charliteral}{'.'});}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(fileExt,\ file)\ !=\ 0\ ||\ fileExt\ !=\ NULL)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(fileExt,\ \textcolor{stringliteral}{"{}.jpg"{}})\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{types_8h_aca66d0ced35dbef8a9d4aaf398baff6daee5c5b1ae360854fa6bd979955fabbe3}{file\_type\_jpg}};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00046}00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(fileExt,\ \textcolor{stringliteral}{"{}.png"{}})\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{types_8h_aca66d0ced35dbef8a9d4aaf398baff6da6e5eed1c98266a26d690bfd396868774}{file\_type\_png}};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(fileExt,\ \textcolor{stringliteral}{"{}.c"{}})\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{types_8h_aca66d0ced35dbef8a9d4aaf398baff6da39c183f44efe5e947540b150c850f6b5}{file\_type\_c}};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (strcmp(fileExt,\ \textcolor{stringliteral}{"{}.h"{}})\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{types_8h_aca66d0ced35dbef8a9d4aaf398baff6da46de1c9641d80956f0a03e8ab34c8db6}{file\_type\_h}};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*else\ if\ (strcmp(fileExt,\ "{}md"{})\ ==\ 0)}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ file\_type\_md;*/}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{types_8h_a235b663ff0abc8252d00d13e51905888}{DEFAULT\_FILE\_TYPE}};}
+\DoxyCodeLine{\Hypertarget{console_8c_source_l00056}00056\ \}}
+
+\end{DoxyCode}

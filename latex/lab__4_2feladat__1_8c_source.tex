@@ -1,0 +1,52 @@
+\doxysection{feladat\+\_\+1.\+c}
+\hypertarget{lab__4_2feladat__1_8c_source}{}\label{lab__4_2feladat__1_8c_source}\index{Labor/lab\_4/feladat\_1.c@{Labor/lab\_4/feladat\_1.c}}
+\mbox{\hyperlink{lab__4_2feladat__1_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00002}00002\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00003}\mbox{\hyperlink{lab__4_2feladat__1_8c_a939cce0b0790292ddab3fcd71c043635}{00003}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__4_2feladat__1_8c_a939cce0b0790292ddab3fcd71c043635}{func1}}(\textcolor{keywordtype}{int}\ i2)\ \{}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00004}00004\ \ \ \ \ i2\ *=\ 2;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00005}00005\ \ \ \ \ printf(\textcolor{stringliteral}{"{}func1()...\ i2\ =\ \%d\(\backslash\)n"{}},\ i2);\ \ \ \ \ \textcolor{comment}{/*\ 4\ */}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00006}00006\ \}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00007}00007\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00008}\mbox{\hyperlink{lab__4_2feladat__1_8c_a7a9418169f587c31a796d6065668d710}{00008}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lab__4_2feladat__1_8c_a7a9418169f587c31a796d6065668d710}{func2}}(\textcolor{keywordtype}{int}\ *p3)\ \{}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00009}00009\ \ \ \ \ *p3\ *=\ 2;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00010}00010\ \ \ \ \ printf(\textcolor{stringliteral}{"{}func2()...\ *p3\ =\ \%d\(\backslash\)n"{}},\ *p3);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00011}00011\ \ \ \ \ p3\ =\ NULL;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 5,\ 6\ */}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00012}00012\ \ \ \ \ printf(\textcolor{stringliteral}{"{}func2()...\ p3\ =\ \%p\(\backslash\)n"{}},\ p3);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00013}00013\ \}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00014}00014\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00015}\mbox{\hyperlink{lab__4_2feladat__1_8c_a840291bc02cba5474a4cb46a9b9566fe}{00015}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lab__4_2feladat__1_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{int}\ i1\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{int}\ *p1\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{int}\ *p2\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00019}00019\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Hova\ mutat\ p1\ es\ p2?\(\backslash\)n"{}});\ \ \ \ \ \ \ \textcolor{comment}{/*\ 1\ */}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00020}00020\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00021}00021\ \ \ \ \ p1\ =\ \&i1;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00022}00022\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\&i1\ =\ \%p,\ p1\ =\ \%p\(\backslash\)n"{}},\ \&i1,\ p1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00023}00023\ \ \ \ \ printf(\textcolor{stringliteral}{"{}i1\ =\ \%d,\ *p1\ =\ \%d\(\backslash\)n"{}},\ i1,\ *p1);\ \textcolor{comment}{/*\ 2\ */}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00024}00024\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00025}00025\ \ \ \ \ i1\ =\ 3;\ \ printf(\textcolor{stringliteral}{"{}*p1\ =\ \%d\(\backslash\)n"{}},\ *p1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00026}00026\ \ \ \ \ *p1\ =\ 4;\ printf(\textcolor{stringliteral}{"{}i1\ =\ \%d\(\backslash\)n"{}},\ i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00027}00027\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00028}00028\ \ \ \ \ p2\ =\ p1;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00029}00029\ \ \ \ \ *p2\ =\ 5;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00030}00030\ \ \ \ \ printf(\textcolor{stringliteral}{"{}i1\ =\ \%d,\ p2\ =\ \%p\(\backslash\)n"{}},\ i1,\ p2);\ \ \ \textcolor{comment}{/*\ 3\ */}}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00031}00031\ \ \ \ \ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00032}00032\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{lab__4_2feladat__1_8c_a939cce0b0790292ddab3fcd71c043635}{func1}}(i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00034}00034\ \ \ \ \ printf(\textcolor{stringliteral}{"{}main()...\ i1\ =\ \%d\ -\/\ de\ miert?\(\backslash\)n"{}},\ i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00035}00035\ \ \ \ \ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00036}00036\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{lab__4_2feladat__1_8c_a7a9418169f587c31a796d6065668d710}{func2}}(\&i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00038}00038\ \ \ \ \ printf(\textcolor{stringliteral}{"{}main()...\ i1\ =\ \%d\ -\/\ miert?\(\backslash\)n"{}},\ i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00039}00039\ \ \ \ \ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00040}00040\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{lab__4_2feladat__1_8c_a7a9418169f587c31a796d6065668d710}{func2}}(p2);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00042}00042\ \ \ \ \ printf(\textcolor{stringliteral}{"{}main()...\ i1\ =\ \%d\ -\/\ miert?\(\backslash\)n"{}},\ i1);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00043}00043\ \ \ \ \ printf(\textcolor{stringliteral}{"{}main()...\ p2\ =\ \%p\ -\/\ miert?\(\backslash\)n"{}},\ p2);}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00044}00044\ \ }
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{lab__4_2feladat__1_8c_source_l00046}00046\ \}}
+
+\end{DoxyCode}

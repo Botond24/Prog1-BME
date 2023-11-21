@@ -56,11 +56,6 @@ typedef struct {
  */
 int read_ini(const char *filename, theme_t *theme);
 /**
- * turns a string to lowercase
- * @param str string
- */
-void stoLower(char *str);
-/**
  * Sets the rgba of an SDL_Colour
  * @param hex hexadecimal string beginning with an #
  * @param colour pointer to the SDL_Colour

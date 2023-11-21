@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
         root = read_source(input_file);
     }
     if (output_type == file_type_c){
-        printf("HOW");
+        fprintf(stderr,"HOW");
     }
     while (!quit) {
         SDL_PollEvent(&event);
@@ -52,8 +52,9 @@ int main(int argc, char** argv) {
                             break;
                         case ID_OPEN_FILE:
                             ;
-                            temp = file_open_dialog(windowRef);
+                            temp = file_open_dialog(windowRef,L"Source file",L"*.c,*.h");
                             if (temp == NULL) break;
+                            free(input_file);
                             input_file = temp;
                             input_type = ends_with(input_file);
                             root = read_source(input_file);
@@ -63,15 +64,25 @@ int main(int argc, char** argv) {
                             ;
                             temp = file_save_dialog(windowRef);
                             if (temp == NULL) break;
+                            free(output_file);
                             output_file = temp;
                             output_type = ends_with(output_file);
                             //printf("%s", output_file);
                             break;
                         case ID_LOAD_THEME:
+                            temp = file_open_dialog(windowRef,L"Theme file",L"*.ini");
+                            if (temp == NULL) break;
+                            free(theme_file);
+                            theme_file = temp;
+                            if (read_ini(theme_file, theme) == -1){
+                                theme = &default_theme;
+                                SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Theme error", "Couldn't load theme", window);
+                                break;
+                            }
                             break;
                         case ID_RESET_THEME:
                             theme = &default_theme;
-                            //redarw call
+                            //TODO: redraw call
                             break;
                         case ID_ZOOM_IN:
                             break;
@@ -129,12 +140,12 @@ void ActivateMenu(HWND windowRef)
     SetMenu(windowRef, hMenuBar);
 }
 
-char* file_open_dialog(HWND windowRef)
+char* file_open_dialog(HWND windowRef, const wchar_t *name, const wchar_t *file_spec)
 {
     char *file_path = NULL;
     HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED |
                                       COINIT_DISABLE_OLE1DDE);
-    COMDLG_FILTERSPEC filterspec = {L"Source Files", L"*.c;*.h"};
+    COMDLG_FILTERSPEC filterspec = {name, file_spec};
     if (SUCCEEDED(hr))
     {
         IFileOpenDialog *pFileOpen;

@@ -32,7 +32,7 @@ int read_ini(const char *filename, theme_t *theme) {
         if (line[0] == '[') {
             char *name = line + 1;
             name = strtok(name, "]");
-            stoLower(name);
+            name = strlwr(name);
             //printf("%s\n", name);
             for (int i = 0; i < 6; i++) {
                 if (strcmp(name, mappings_c[i].key) == 0) {

@@ -1,0 +1,52 @@
+\doxysection{1st.\+c}
+\hypertarget{_gyakorlat_2gyak__1_21st_8c_source}{}\label{_gyakorlat_2gyak__1_21st_8c_source}\index{Gyakorlat/gyak\_1/1st.c@{Gyakorlat/gyak\_1/1st.c}}
+\mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00004}\mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a452d2724d2f82cc2c17f54b388232200}{00004}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a452d2724d2f82cc2c17f54b388232200}{max}}(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{double}\ b)\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00005}00005\ \ \ \ \ \textcolor{keywordflow}{return}\ a\ >\ b\ ?\ a\ :\ b;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00006}00006\ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00007}\mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a8357b3231a12fc992724718bc1adb05b}{00007}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a8357b3231a12fc992724718bc1adb05b}{length}}(\textcolor{keywordtype}{int}\ n)\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00008}00008\ \ \ \ \ n\ =\ (int)\ floor(log10(n))+1;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00009}00009\ \ \ \ \ \textcolor{keywordflow}{return}\ n;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00010}00010\ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00011}\mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a4f84ce4a7b6d4e4fb2c14015f8769ca8}{00011}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a4f84ce4a7b6d4e4fb2c14015f8769ca8}{szjmi}}(\textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ i)\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ t\ =\ n\ \%\ (int)\ (pow(10,i));}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00014}00014\ \ \ \ \ \ \ \ \ n\ =\ n\ \%\ (int)\ (pow(10,i-\/1));}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00015}00015\ \ \ \ \ \}\ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00016}00016\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00017}00017\ \ \ \ \ \ \ \ \ n\ =\ n\ \%\ (int)\ (pow(10,i));}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00018}00018\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00019}00019\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{return}\ n;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00023}\mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00023}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_eloadas_21st_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{int}\ a,b,ah,bh,vsz,i,t;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00025}00025\ \ \ \ \ a\ =\ 123;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00026}00026\ \ \ \ \ b\ =\ 999;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//scanf("{}\%d\ \%d"{},\&a,\&b);}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00028}00028\ \ \ \ \ ah\ =\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a8357b3231a12fc992724718bc1adb05b}{length}}(a);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00029}00029\ \ \ \ \ bh\ =\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a8357b3231a12fc992724718bc1adb05b}{length}}(b);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00030}00030\ \ \ \ \ vsz\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00031}00031\ \ \ \ \ i\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00032}00032\ \ \ \ \ t\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <=\ (\textcolor{keywordtype}{int})\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a452d2724d2f82cc2c17f54b388232200}{max}}(ah,bh))\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00034}00034\ \ \ \ \ \ \ \ \ bh\ =\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a8357b3231a12fc992724718bc1adb05b}{length}}(b);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ szj\ =\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a4f84ce4a7b6d4e4fb2c14015f8769ca8}{szjmi}}(a,i)\ +\ \mbox{\hyperlink{_gyakorlat_2gyak__1_21st_8c_a4f84ce4a7b6d4e4fb2c14015f8769ca8}{szjmi}}(b,i);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (szj\ >\ 9)\{}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ t\ =\ szj\ -\/\ szj\ \%\ 10;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ szj\ -\/=\ t;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ b\ +=\ t;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00040}00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00041}00041\ \ \ \ \ \ \ \ \ vsz\ +=\ szj*pow(10,i-\/1);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00042}00042\ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00044}00044\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d"{}},vsz);}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_gyakorlat_2gyak__1_21st_8c_source_l00046}00046\ \}}
+
+\end{DoxyCode}

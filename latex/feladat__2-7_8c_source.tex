@@ -1,0 +1,98 @@
+\doxysection{feladat\+\_\+2-\/7.c}
+\hypertarget{feladat__2-7_8c_source}{}\label{feladat__2-7_8c_source}\index{Labor/lab\_10/feladat\_2-\/7.c@{Labor/lab\_10/feladat\_2-\/7.c}}
+\mbox{\hyperlink{feladat__2-7_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}../debugmalloc.h"{}}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00005}\mbox{\hyperlink{struct_lista_elem}{00005}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00006}\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{00006}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00007}\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{00007}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00008}\mbox{\hyperlink{feladat__2-7_8c_aecc7aa80a85efb3789bb0888e9fe4c78}{00008}}\ \}\ \mbox{\hyperlink{struct_lista_elem}{ListaElem}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00009}00009\ \ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00010}00010\ \ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00011}00011\ \textcolor{comment}{/*\ létrehoz\ egy\ listát,\ benne\ egy\ csomó\ számmal\ */}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00012}\mbox{\hyperlink{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba}{00012}}\ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *\mbox{\hyperlink{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba}{lista\_letrehoz}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00013}00013\ \ \ \ \ \textcolor{keywordtype}{int}\ szamok[]\ =\ \{\ 8,\ 14,\ 13,\ 17,\ 1,\ 19,\ 16,\ 5,\ 3,\ 11,\ 2,}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 15,\ 9,\ 10,\ 6,\ 22,\ 4,\ 7,\ 18,\ 27,\ -\/1\ \};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *lis\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00016}00016\ \ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ szamok[i]\ !=\ -\/1;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ u\ =\ (\mbox{\hyperlink{struct_lista_elem}{ListaElem}}*)\ \mbox{\hyperlink{_labor_2debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}));}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00020}00020\ \ \ \ \ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}}\ =\ lis;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00021}00021\ \ \ \ \ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}}\ =\ szamok[i];}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00022}00022\ \ \ \ \ \ \ \ \ lis\ =\ u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{return}\ lis;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00026}\mbox{\hyperlink{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44}{00026}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44}{len}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *start)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{int}\ num\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{while}\ (start\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00029}00029\ \ \ \ \ \ \ \ \ num++;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ start\ =\ start-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{return}\ num;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00034}\mbox{\hyperlink{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba}{00034}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba}{free\_list}}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *start)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{while}\ (start\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *curr\ =\ start;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00037}00037\ \ \ \ \ \ \ \ \ start\ =\ start-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_labor_2debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(curr);}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00042}\mbox{\hyperlink{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a}{00042}}\ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *\mbox{\hyperlink{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a}{lista\_elejere\_beszur}}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *start,\ \textcolor{keywordtype}{int}\ uj)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00044}00044\ \ \ \ \ u\ =\ (\mbox{\hyperlink{struct_lista_elem}{ListaElem}}*)\ \mbox{\hyperlink{_labor_2debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}));}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00045}00045\ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}}\ =\ start;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00046}00046\ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}}\ =\ uj;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{return}\ u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00048}00048\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00049}\mbox{\hyperlink{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186}{00049}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186}{lista\_vegere\_beszur}}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *start,\ \textcolor{keywordtype}{int}\ uj)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00051}00051\ \ \ \ \ u\ =\ (\mbox{\hyperlink{struct_lista_elem}{ListaElem}}*)\ \mbox{\hyperlink{_labor_2debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}));}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *temp\ =\ start;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{while}\ (temp-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}}\ !=\ NULL)}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00055}00055\ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00057}00057\ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}}\ =\ u;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00058}00058\ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}}\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00059}00059\ \ \ \ \ u-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}}\ =\ uj;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00063}\mbox{\hyperlink{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9}{00063}}\ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *\mbox{\hyperlink{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9}{find}}(\mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *start,\ \textcolor{keywordtype}{int}\ num)\{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{while}\ (start\ !=\ NULL)}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00065}00065\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00066}00066\ \ \ \ \ \ \ \ \ start\ =\ start-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (start-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}}\ ==\ num)}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00068}00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ start;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00070}00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00074}00074\ \ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00075}\mbox{\hyperlink{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe}{00075}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00076}00076\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *eleje;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00077}00077\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00078}00078\ \ \ \ \ eleje\ =\ \mbox{\hyperlink{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba}{lista\_letrehoz}}();}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00079}00079\ \ \ \ \ eleje\ =\ \mbox{\hyperlink{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a}{lista\_elejere\_beszur}}(eleje,\ 21);}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186}{lista\_vegere\_beszur}}(eleje,\ 20);}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{struct_lista_elem}{ListaElem}}\ *temp\ =\ eleje;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00083}00083\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\ "{}},\ temp-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}});}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00084}00084\ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_lista_elem_abdf440d7ed5aa9f3bcc1c623aec795de}{kov}};}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00086}00086\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%d\(\backslash\)n"{}},\ \mbox{\hyperlink{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44}{len}}(eleje));}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00087}00087\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\ \mbox{\hyperlink{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9}{find}}(eleje,\ 11)-\/>\mbox{\hyperlink{struct_lista_elem_a7ebda630e8dc0e6247901d06a7cf344c}{adat}});}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00088}00088\ \ \ \ \ \mbox{\hyperlink{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba}{free\_list}}(eleje);}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00091}00091\ \textcolor{comment}{//fordítva\ vannak\ mert\ a\ láncolt\ lista\ fordítva\ van\ létrehozva}}
+\DoxyCodeLine{\Hypertarget{feladat__2-7_8c_source_l00092}00092\ }
+
+\end{DoxyCode}

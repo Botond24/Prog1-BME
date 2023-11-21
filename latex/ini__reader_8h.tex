@@ -1,0 +1,219 @@
+\doxysection{NHF/ini\+\_\+reader.h File Reference}
+\hypertarget{ini__reader_8h}{}\label{ini__reader_8h}\index{NHF/ini\_reader.h@{NHF/ini\_reader.h}}
+{\ttfamily \#include $<$SDL\+\_\+pixels.\+h$>$}\newline
+{\ttfamily \#include "{}types.\+h"{}}\newline
+Include dependency graph for ini\+\_\+reader.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{ini__reader_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ini__reader_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcolour__t}{colour\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em colouring struct for theme \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtheme__t}{theme\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em struct for theme \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}{context\+\_\+e}} \{ \newline
+\mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a82b8b8a80df394404b368bec3c5a0709}{function}}
+, \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a27eeda5f96aa26148bc161391db4ccaa}{structs}}
+, \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ac8bb815d8e3574231fdd28645507fdaf}{variable}}
+, \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ae5434748b6fa61ae4e3576dd4c59fc85}{conditional}}
+, \newline
+\mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2af867b2be1a4eedb3c8442d3ce8cbc647}{loop}}
+, \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a4501109f0d590a60de4562198811a49d}{main\+\_\+}}
+ \}
+\begin{DoxyCompactList}\small\item\em enum for ini file context \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2}{sub\+\_\+context\+\_\+e}} \{ \mbox{\hyperlink{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a1667f13aa992e373547cf10fc8c61590}{background}}
+, \mbox{\hyperlink{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a0e17259309839615d215adfe7a44fb50}{text}}
+ \}
+\begin{DoxyCompactList}\small\item\em enum for ini file sub\+\_\+context (in ini documentation is named value, but i use it like another context so it doesnt matter) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ini__reader_8h_a92e446bb5adb022ee564487fe885e766}{read\+\_\+ini}} (const char \texorpdfstring{$\ast$}{*}filename, \mbox{\hyperlink{structtheme__t}{theme\+\_\+t}} \texorpdfstring{$\ast$}{*}theme)
+\begin{DoxyCompactList}\small\item\em reads the theme ini file for custom themes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ini__reader_8h_a3fffb1a57a80ee4262bc7efb82c1633c}{sto\+Lower}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em turns a string to lowercase \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ini__reader_8h_ae258a3e9117e2bf3c98a10bb1ee12969}{set\+\_\+rgba}} (char \texorpdfstring{$\ast$}{*}hex, SDL\+\_\+\+Colour \texorpdfstring{$\ast$}{*}colour)
+\begin{DoxyCompactList}\small\item\em Sets the rgba of an SDL\+\_\+\+Colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2} 
+\index{ini\_reader.h@{ini\_reader.h}!context\_e@{context\_e}}
+\index{context\_e@{context\_e}!ini\_reader.h@{ini\_reader.h}}
+\doxysubsubsection{\texorpdfstring{context\_e}{context\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}{context\+\_\+e}}}
+
+
+
+enum for ini file context 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{function@{function}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!function@{function}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a82b8b8a80df394404b368bec3c5a0709}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a82b8b8a80df394404b368bec3c5a0709} 
+function&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{structs@{structs}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!structs@{structs}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a27eeda5f96aa26148bc161391db4ccaa}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a27eeda5f96aa26148bc161391db4ccaa} 
+structs&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{variable@{variable}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!variable@{variable}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ac8bb815d8e3574231fdd28645507fdaf}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ac8bb815d8e3574231fdd28645507fdaf} 
+variable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{conditional@{conditional}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!conditional@{conditional}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ae5434748b6fa61ae4e3576dd4c59fc85}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2ae5434748b6fa61ae4e3576dd4c59fc85} 
+conditional&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{loop@{loop}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!loop@{loop}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2af867b2be1a4eedb3c8442d3ce8cbc647}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2af867b2be1a4eedb3c8442d3ce8cbc647} 
+loop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{main\_@{main\_}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!main\_@{main\_}}}\Hypertarget{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a4501109f0d590a60de4562198811a49d}\label{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a4501109f0d590a60de4562198811a49d} 
+main\+\_\+&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ini__reader_8h_source_l00014}{14}} of file \mbox{\hyperlink{ini__reader_8h_source}{ini\+\_\+reader.\+h}}.
+
+\Hypertarget{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2}\label{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2} 
+\index{ini\_reader.h@{ini\_reader.h}!sub\_context\_e@{sub\_context\_e}}
+\index{sub\_context\_e@{sub\_context\_e}!ini\_reader.h@{ini\_reader.h}}
+\doxysubsubsection{\texorpdfstring{sub\_context\_e}{sub\_context\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2}{sub\+\_\+context\+\_\+e}}}
+
+
+
+enum for ini file sub\+\_\+context (in ini documentation is named value, but i use it like another context so it doesnt matter) 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{background@{background}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!background@{background}}}\Hypertarget{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a1667f13aa992e373547cf10fc8c61590}\label{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a1667f13aa992e373547cf10fc8c61590} 
+background&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{text@{text}!ini\_reader.h@{ini\_reader.h}}\index{ini\_reader.h@{ini\_reader.h}!text@{text}}}\Hypertarget{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a0e17259309839615d215adfe7a44fb50}\label{ini__reader_8h_a28ca7d14d641ee829b49fb7b5da546b2a0e17259309839615d215adfe7a44fb50} 
+text&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ini__reader_8h_source_l00026}{26}} of file \mbox{\hyperlink{ini__reader_8h_source}{ini\+\_\+reader.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ini__reader_8h_a92e446bb5adb022ee564487fe885e766}\label{ini__reader_8h_a92e446bb5adb022ee564487fe885e766} 
+\index{ini\_reader.h@{ini\_reader.h}!read\_ini@{read\_ini}}
+\index{read\_ini@{read\_ini}!ini\_reader.h@{ini\_reader.h}}
+\doxysubsubsection{\texorpdfstring{read\_ini()}{read\_ini()}}
+{\footnotesize\ttfamily int read\+\_\+ini (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename,  }\item[{\mbox{\hyperlink{structtheme__t}{theme\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{theme }\end{DoxyParamCaption})}
+
+
+
+reads the theme ini file for custom themes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of the ini file (including the .ini) \\
+\hline
+{\em theme} & pointer to the theme variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if ok, 1 if error 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{ini__reader_8c_source_l00011}{11}} of file \mbox{\hyperlink{ini__reader_8c_source}{ini\+\_\+reader.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{ini__reader_8h_a92e446bb5adb022ee564487fe885e766_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{ini__reader_8h_a92e446bb5adb022ee564487fe885e766_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ini__reader_8h_ae258a3e9117e2bf3c98a10bb1ee12969}\label{ini__reader_8h_ae258a3e9117e2bf3c98a10bb1ee12969} 
+\index{ini\_reader.h@{ini\_reader.h}!set\_rgba@{set\_rgba}}
+\index{set\_rgba@{set\_rgba}!ini\_reader.h@{ini\_reader.h}}
+\doxysubsubsection{\texorpdfstring{set\_rgba()}{set\_rgba()}}
+{\footnotesize\ttfamily void set\+\_\+rgba (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{hex,  }\item[{SDL\+\_\+\+Colour \texorpdfstring{$\ast$}{*}}]{colour }\end{DoxyParamCaption})}
+
+
+
+Sets the rgba of an SDL\+\_\+\+Colour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex} & hexadecimal string beginning with an \# \\
+\hline
+{\em colour} & pointer to the SDL\+\_\+\+Colour \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{ini__reader_8c_source_l00088}{88}} of file \mbox{\hyperlink{ini__reader_8c_source}{ini\+\_\+reader.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{ini__reader_8h_ae258a3e9117e2bf3c98a10bb1ee12969_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ini__reader_8h_a3fffb1a57a80ee4262bc7efb82c1633c}\label{ini__reader_8h_a3fffb1a57a80ee4262bc7efb82c1633c} 
+\index{ini\_reader.h@{ini\_reader.h}!stoLower@{stoLower}}
+\index{stoLower@{stoLower}!ini\_reader.h@{ini\_reader.h}}
+\doxysubsubsection{\texorpdfstring{stoLower()}{stoLower()}}
+{\footnotesize\ttfamily void sto\+Lower (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+turns a string to lowercase 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{ini__reader_8c_source_l00081}{81}} of file \mbox{\hyperlink{ini__reader_8c_source}{ini\+\_\+reader.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{ini__reader_8h_a3fffb1a57a80ee4262bc7efb82c1633c_icgraph}
+\end{center}
+\end{figure}

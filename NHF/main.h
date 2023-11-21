@@ -17,6 +17,12 @@
 #include "source_reader.h"
 #include "debugmalloc.h"
 
+/**
+ * Obvious
+ * @param argc
+ * @param argv
+ * @return
+ */
 int main(int argc, char** argv);
 
 #define ID_OPEN_FILE 1
@@ -40,9 +46,24 @@ HWND GetHwnd(SDL_Window *window);
  */
 void ActivateMenu(HWND windowRef);
 //code from https://stackoverflow.com/questions/51250046/sdl2-win32-api-menubar-click-event-not-working
-char* file_open_dialog(HWND windowRef);
+/**
+ * Creates a file open dialog for opening source files
+ * @param windowRef win32 window handle
+ * @param name filter name
+ * @param file_spec filter spec
+ * @return file to open
+ */
+char* file_open_dialog(HWND windowRef, const wchar_t *name, const wchar_t *file_spec);
+/**
+ * Creates a file save dialog for saving image files
+ * @param windowRef win32 window handle
+ * @return file to save
+ */
 char* file_save_dialog(HWND windowRef);
 
+/**
+ * Default theme for the viewport
+ */
 static theme_t default_theme = {
         .main_ = {
             .background = {.r = 255,.g = 255,.b = 255,.a = 255},

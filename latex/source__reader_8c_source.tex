@@ -1,0 +1,89 @@
+\doxysection{source\+\_\+reader.\+c}
+\hypertarget{source__reader_8c_source}{}\label{source__reader_8c_source}\index{NHF/source\_reader.c@{NHF/source\_reader.c}}
+\mbox{\hyperlink{source__reader_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ sziha\ on\ 21/10/2023.}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{source__reader_8h}{source\_reader.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00007}\mbox{\hyperlink{source__reader_8c_afabc9f7d62d71d56c4aa2d51d0045328}{00007}}\ \mbox{\hyperlink{structnode}{node\_t}}\ *\mbox{\hyperlink{source__reader_8c_afabc9f7d62d71d56c4aa2d51d0045328}{read\_source}}(\textcolor{keywordtype}{char}\ *filename)\{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00008}00008\ \ \ \ \ FILE\ *fp\ =\ fopen(filename,\ \textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00009}00009\ \ \ \ \ \textcolor{keywordflow}{if}\ (fp\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00010}00010\ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ \%s\(\backslash\)n"{}},\ filename);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00012}00012\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{structnode}{node\_t}}\ *first\_node\ =\ (\mbox{\hyperlink{structnode}{node\_t}}\ *)\ \mbox{\hyperlink{_labor_2debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structnode}{node\_t}}));}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{structnode}{node\_t}}\ *current\_node\ =\ first\_node;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00015}00015\ \ \ \ \ current\_node-\/>\mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{type}}\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{char}\ buffer[1000];}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{int}\ skip\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{int}\ c\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{int}\ c\_bracket[2]\ =\ \{0,0\};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ c\ !=\ EOF;\ i\ =\ (i\ ==\ 999)\ ?\ 0\ :\ i\ +\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00021}00021\ \ \ \ \ \ \ \ \ c\ =\ getc(fp);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (skip\ ==\ 1\ \&\&\ c\ !=\ \textcolor{charliteral}{'\(\backslash\)n'})\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00024}00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (c\ ==\ \textcolor{charliteral}{'\{'})}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00026}00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ c\_bracket[1]\ =\ c\_bracket[0];}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ c\_bracket[0]++;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00029}00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (c\ ==\ \textcolor{charliteral}{'\}'})}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ c\_bracket[1]\ =\ c\_bracket[0];}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ c\_bracket[0]-\/-\/;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00035}00035\ \ \ \ \ \ \ \ \ skip\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00036}00036\ \ \ \ \ \ \ \ \ buffer[i]\ =\ (char)\ c;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00037}00037\ \ \ \ \ \ \ \ \ buffer[i\ +\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (buffer[i]\ ==\ \textcolor{charliteral}{'\#'}\ ||\ buffer[i]\ ==\ \textcolor{charliteral}{'\(\backslash\)n'}\ ||\ (i\ >\ 1\ \&\&\ (buffer[i-\/1]\ ==\ \textcolor{charliteral}{'/'}\ \&\&\ buffer[i]\ ==\ \textcolor{charliteral}{'/'})))\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ i-\/-\/;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ skip\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ >\ 1\ \&\&\ (buffer[i-\/1]\ ==\ \textcolor{charliteral}{'/'}\ \&\&\ buffer[i]\ ==\ \textcolor{charliteral}{'/'}))\ i-\/-\/;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00044}00044\ \ \ \ \ \ \ \ \ fprintf(stderr,\textcolor{stringliteral}{"{}\%s"{}},\ buffer);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (current\_node-\/>\mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{type}})\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a27eeda5f96aa26148bc161391db4ccaa}{structs}}:}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_node-\/>\mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}[0]\ ==\ \textcolor{charliteral}{'\(\backslash\)0'})\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (c\_bracket[0]\ ==\ 1)}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (c\_bracket[0]\ ==\ 0\ \&\&\ c\_bracket[1]\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (c\ !=\ \textcolor{charliteral}{';'})\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *name\ =\ \mbox{\hyperlink{source__reader_8c_a37e8209ccc1457f8b132a9d148023a0f}{substr}}(buffer,\ \textcolor{charliteral}{'\}'},\ \textcolor{charliteral}{';'});}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (name\ ==\ NULL)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strstr(buffer,\ \textcolor{stringliteral}{"{}struct"{}})\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}test"{}});}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\_node-\/>\mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{type}}\ =\ \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2a27eeda5f96aa26148bc161391db4ccaa}{structs}};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sscanf(buffer,\textcolor{stringliteral}{"{}struct\ \%s"{}},\ current\_node-\/>\mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}})\ !=\ 1)\ \{\ \textcolor{comment}{//struct\ name}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sscanf(buffer,\ \textcolor{stringliteral}{"{}struct\ \%s\{"{}},\ current\_node-\/>\mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}})\ !=\ 1)\ current\_node-\/>\mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}[0]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};\ \textcolor{comment}{//struct\ name\{}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00066}00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00068}00068\ \ \ \ \ fclose(fp);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{return}\ first\_node;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00072}\mbox{\hyperlink{source__reader_8c_a37e8209ccc1457f8b132a9d148023a0f}{00072}}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{source__reader_8c_a37e8209ccc1457f8b132a9d148023a0f}{substr}}(\textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *str,\ \textcolor{keywordtype}{char}\ start,\ \textcolor{keywordtype}{char}\ end)\ \{}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00073}00073\ \ \ \ \ \textcolor{keywordtype}{char}*\ s\ =\ strchr(str,\ start);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{char}*\ e\ =\ strchr(str,\ end);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{if}\ (s\ ==\ NULL\ ||\ e\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{_labor_2debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}((e\ -\/\ s)\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00078}00078\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00080}00080\ \ \ \ \ strncpy(result,\ s,\ e-\/s);}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00081}00081\ \ \ \ \ result[e-\/s+1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{\Hypertarget{source__reader_8c_source_l00083}00083\ \}}
+
+\end{DoxyCode}

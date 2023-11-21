@@ -51,28 +51,28 @@ build cmake_object_order_depends_target_NHF: phony || CMakeFiles/NHF.dir
 
 build CMakeFiles/NHF.dir/main.c.obj: C_COMPILER__NHF_unscanned_Release D$:/Documents/Prog1-BME/NHF/main.c || cmake_object_order_depends_target_NHF
   DEP_FILE = CMakeFiles\NHF.dir\main.c.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Werror
   INCLUDES = -IC:/msys64/mingw64/bin/../include/SDL2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/webp
   OBJECT_DIR = CMakeFiles\NHF.dir
   OBJECT_FILE_DIR = CMakeFiles\NHF.dir
 
 build CMakeFiles/NHF.dir/console.c.obj: C_COMPILER__NHF_unscanned_Release D$:/Documents/Prog1-BME/NHF/console.c || cmake_object_order_depends_target_NHF
   DEP_FILE = CMakeFiles\NHF.dir\console.c.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Werror
   INCLUDES = -IC:/msys64/mingw64/bin/../include/SDL2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/webp
   OBJECT_DIR = CMakeFiles\NHF.dir
   OBJECT_FILE_DIR = CMakeFiles\NHF.dir
 
 build CMakeFiles/NHF.dir/ini_reader.c.obj: C_COMPILER__NHF_unscanned_Release D$:/Documents/Prog1-BME/NHF/ini_reader.c || cmake_object_order_depends_target_NHF
   DEP_FILE = CMakeFiles\NHF.dir\ini_reader.c.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Werror
   INCLUDES = -IC:/msys64/mingw64/bin/../include/SDL2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/webp
   OBJECT_DIR = CMakeFiles\NHF.dir
   OBJECT_FILE_DIR = CMakeFiles\NHF.dir
 
 build CMakeFiles/NHF.dir/source_reader.c.obj: C_COMPILER__NHF_unscanned_Release D$:/Documents/Prog1-BME/NHF/source_reader.c || cmake_object_order_depends_target_NHF
   DEP_FILE = CMakeFiles\NHF.dir\source_reader.c.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Werror
   INCLUDES = -IC:/msys64/mingw64/bin/../include/SDL2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/webp
   OBJECT_DIR = CMakeFiles\NHF.dir
   OBJECT_FILE_DIR = CMakeFiles\NHF.dir

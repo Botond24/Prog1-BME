@@ -1,0 +1,152 @@
+\doxysection{node Struct Reference}
+\hypertarget{structnode}{}\label{structnode}\index{node@{node}}
+
+
+linked list structure  
+
+
+
+
+{\ttfamily \#include $<$source\+\_\+reader.\+h$>$}
+
+
+
+Collaboration diagram for node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}{context\+\_\+e}} \mbox{\hyperlink{structnode_abfb8defb7b041271a768c0ddd7796e47}{type}}
+\item 
+char \mbox{\hyperlink{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}} \mbox{[}100\mbox{]}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{structfunc__type__t}{func\_type\_t}} \mbox{\hyperlink{structnode_a5b8f3a301bf29f32d69084e37beabeb6}{func}}\\
+\>\mbox{\hyperlink{structstruct__type__t}{struct\_type\_t}} \mbox{\hyperlink{structnode_afcf20610c33b05a225ba006e93c3ad36}{struct\_}}\\
+\>\mbox{\hyperlink{structvariable__type__t}{variable\_type\_t}} \mbox{\hyperlink{structnode_afd266f5928cb58227169d821a02a9646}{variable}}\\
+\>\mbox{\hyperlink{structconditional__type__t}{conditional\_type\_t}} \mbox{\hyperlink{structnode_a626044211bec94a3ec999f9d723bfc18}{conditional}}\\
+\>\mbox{\hyperlink{structloop__type__t}{loop\_type\_t}} \mbox{\hyperlink{structnode_a38357d501723a2a27c7dadc6639fac8d}{loop}}\\
+\}; \\
+
+\end{tabbing}\item 
+int \mbox{\hyperlink{structnode_a51695a823cbcb573d6cf50043a5adb1a}{list\+\_\+size}}
+\item 
+struct \mbox{\hyperlink{structnode}{node}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structnode_ab78b6b14efcfbad31cbc9da31cdcea47}{next\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+linked list structure 
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00034}{34}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{structnode_a10ccf98f5db7a540d9da85f6a1f73b9c}\label{structnode_a10ccf98f5db7a540d9da85f6a1f73b9c} 
+\doxysubsubsection{\texorpdfstring{[union]}{[union]}}
+{\footnotesize\ttfamily union  \{ ... \} }
+
+\Hypertarget{structnode_a626044211bec94a3ec999f9d723bfc18}\label{structnode_a626044211bec94a3ec999f9d723bfc18} 
+\index{node@{node}!conditional@{conditional}}
+\index{conditional@{conditional}!node@{node}}
+\doxysubsubsection{\texorpdfstring{conditional}{conditional}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structconditional__type__t}{conditional\+\_\+type\+\_\+t}} conditional}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00041}{41}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_a5b8f3a301bf29f32d69084e37beabeb6}\label{structnode_a5b8f3a301bf29f32d69084e37beabeb6} 
+\index{node@{node}!func@{func}}
+\index{func@{func}!node@{node}}
+\doxysubsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structfunc__type__t}{func\+\_\+type\+\_\+t}} func}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00038}{38}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_a51695a823cbcb573d6cf50043a5adb1a}\label{structnode_a51695a823cbcb573d6cf50043a5adb1a} 
+\index{node@{node}!list\_size@{list\_size}}
+\index{list\_size@{list\_size}!node@{node}}
+\doxysubsubsection{\texorpdfstring{list\_size}{list\_size}}
+{\footnotesize\ttfamily int list\+\_\+size}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00044}{44}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_a38357d501723a2a27c7dadc6639fac8d}\label{structnode_a38357d501723a2a27c7dadc6639fac8d} 
+\index{node@{node}!loop@{loop}}
+\index{loop@{loop}!node@{node}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structloop__type__t}{loop\+\_\+type\+\_\+t}} loop}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00042}{42}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544}\label{structnode_aeaf846aa21a7d016a52f0b5b0c2f5544} 
+\index{node@{node}!name@{name}}
+\index{name@{name}!node@{node}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char name\mbox{[}100\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00036}{36}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_ab78b6b14efcfbad31cbc9da31cdcea47}\label{structnode_ab78b6b14efcfbad31cbc9da31cdcea47} 
+\index{node@{node}!nextList@{nextList}}
+\index{nextList@{nextList}!node@{node}}
+\doxysubsubsection{\texorpdfstring{nextList}{nextList}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structnode}{node}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} next\+List}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00045}{45}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_afcf20610c33b05a225ba006e93c3ad36}\label{structnode_afcf20610c33b05a225ba006e93c3ad36} 
+\index{node@{node}!struct\_@{struct\_}}
+\index{struct\_@{struct\_}!node@{node}}
+\doxysubsubsection{\texorpdfstring{struct\_}{struct\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structstruct__type__t}{struct\+\_\+type\+\_\+t}} struct\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00039}{39}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_abfb8defb7b041271a768c0ddd7796e47}\label{structnode_abfb8defb7b041271a768c0ddd7796e47} 
+\index{node@{node}!type@{type}}
+\index{type@{type}!node@{node}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ini__reader_8h_a5c2bc98446a97dda1512e2e225316fc2}{context\+\_\+e}} type}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00035}{35}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+\Hypertarget{structnode_afd266f5928cb58227169d821a02a9646}\label{structnode_afd266f5928cb58227169d821a02a9646} 
+\index{node@{node}!variable@{variable}}
+\index{variable@{variable}!node@{node}}
+\doxysubsubsection{\texorpdfstring{variable}{variable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvariable__type__t}{variable\+\_\+type\+\_\+t}} variable}
+
+
+
+Definition at line \mbox{\hyperlink{source__reader_8h_source_l00040}{40}} of file \mbox{\hyperlink{source__reader_8h_source}{source\+\_\+reader.\+h}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+NHF/\mbox{\hyperlink{source__reader_8h}{source\+\_\+reader.\+h}}\end{DoxyCompactItemize}

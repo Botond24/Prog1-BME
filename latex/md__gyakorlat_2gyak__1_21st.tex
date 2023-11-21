@@ -1,0 +1,82 @@
+\chapter{2nd}
+\hypertarget{md__gyakorlat_2gyak__1_21st}{}\label{md__gyakorlat_2gyak__1_21st}\index{2nd@{2nd}}
+\label{md__gyakorlat_2gyak__1_21st_autotoc_md0}%
+\Hypertarget{md__gyakorlat_2gyak__1_21st_autotoc_md0}%
+ \hypertarget{md__gyakorlat_2gyak__1_21st_autotoc_md1}{}\doxysection{\texorpdfstring{számok sorban}{számok sorban}}\label{md__gyakorlat_2gyak__1_21st_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Ciklus\ i\ =\ 1től\ 10ig}
+\DoxyCodeLine{\ \ \ \ Leírom\ hogy\ \{i\},\ új\ sor}
+\DoxyCodeLine{\ \ \ \ Vége}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gondolom\ az\ 1es\ számot}
+\DoxyCodeLine{Leírom\ a\ gondolt\ számot}
+\DoxyCodeLine{Megnövelem\ a\ számot}
+\DoxyCodeLine{Ha\ a\ szám\ <11\ akkor\ ugrás\ \#2}
+\DoxyCodeLine{Vége}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gondolok\ az\ 1es\ számra\ (N)}
+\DoxyCodeLine{Ismételd:}
+\DoxyCodeLine{\ \ \ \ Leírom\ N\ számot,\ sortörés}
+\DoxyCodeLine{\ \ \ \ Növelem\ N\ számot}
+\DoxyCodeLine{Újra\ ha\ N\ <\ 10}
+\DoxyCodeLine{Vége}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{N\ =\ 1}
+\DoxyCodeLine{Amíg\ N\ <\ 10}
+\DoxyCodeLine{\ \ \ \ Leírom\ N,\ sortörés}
+\DoxyCodeLine{\ \ \ \ N\ =\ N\ +\ 1}
+\DoxyCodeLine{Ismétlés\ vége}
+\DoxyCodeLine{Vége}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{X\ =\ 1}
+\DoxyCodeLine{Amíg\ x\ <=100}
+\DoxyCodeLine{\ \ \ \ Ha\ x\ Mod\ 3\ =/=\ 0\ és\ x\ Mod\ 5\ =/=\ 0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Leírom\ x,\ sortörés}
+\DoxyCodeLine{\ \ \ \ x\ =\ x\ +\ 1}
+\DoxyCodeLine{Vége}
+
+\end{DoxyCode}
+\hypertarget{md__gyakorlat_2gyak__1_21st_autotoc_md2}{}\doxysection{\texorpdfstring{számok összeadása}{számok összeadása}}\label{md__gyakorlat_2gyak__1_21st_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bekérek\ 2\ számot:\ a,\ b}
+\DoxyCodeLine{\#kiszámolom\ hosszukat}
+\DoxyCodeLine{ah\ =\ floor(Log10(a))\ +\ 1}
+\DoxyCodeLine{bh\ =\ floor(Log10(b))\ +\ 1}
+\DoxyCodeLine{I\ =\ 1}
+\DoxyCodeLine{vsz\ =\ 0}
+\DoxyCodeLine{amíg\ I\ <=\ max(ah,\ bh)}
+\DoxyCodeLine{\ \ \ \ szj\ =\ a\ mod\ 10\string^I\ +\ a\ mod\ 10\string^I\ -\/\ a\ mod\ 10\string^(I-\/1)\ -\/\ b\ mod\ 10\string^(I-\/1)}
+\DoxyCodeLine{\ \ \ \ T\ =\ 0}
+\DoxyCodeLine{\ \ \ \ ha\ szj\ >=\ 10,\ akkor}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ T\ =\ szj\ -\/\ szj\ mod\ 10}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ szj\ =\ szj\ -\/\ T}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\ =\ b\ +\ T}
+\DoxyCodeLine{\ \ \ \ vsz\ =\ vsz\ +\ szj\ *\ 10\string^(I-\/1)}
+\DoxyCodeLine{\ \ \ \ bh\ =\ floor(log10(b))\ +\ 1}
+\DoxyCodeLine{\ \ \ \ I\ =\ I\ +\ 1}
+\DoxyCodeLine{Vége}
+
+\end{DoxyCode}
+ 

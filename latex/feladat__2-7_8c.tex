@@ -1,0 +1,178 @@
+\doxysection{Labor/lab\+\_\+10/feladat\+\_\+2-\/7.c File Reference}
+\hypertarget{feladat__2-7_8c}{}\label{feladat__2-7_8c}\index{Labor/lab\_10/feladat\_2-\/7.c@{Labor/lab\_10/feladat\_2-\/7.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}../debugmalloc.\+h"{}}\newline
+Include dependency graph for feladat\+\_\+2-\/7.c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{feladat__2-7_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \mbox{\hyperlink{feladat__2-7_8c_aecc7aa80a85efb3789bb0888e9fe4c78}{Lista\+Elem}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba}{lista\+\_\+letrehoz}} (void)
+\item 
+int \mbox{\hyperlink{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44}{len}} (const \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}start)
+\item 
+void \mbox{\hyperlink{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba}{free\+\_\+list}} (\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}start)
+\item 
+\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a}{lista\+\_\+elejere\+\_\+beszur}} (\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}start, int uj)
+\item 
+void \mbox{\hyperlink{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186}{lista\+\_\+vegere\+\_\+beszur}} (\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}start, int uj)
+\item 
+\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9}{find}} (\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}start, int num)
+\item 
+int \mbox{\hyperlink{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{feladat__2-7_8c_aecc7aa80a85efb3789bb0888e9fe4c78}\label{feladat__2-7_8c_aecc7aa80a85efb3789bb0888e9fe4c78} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!ListaElem@{ListaElem}}
+\index{ListaElem@{ListaElem}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{ListaElem}{ListaElem}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9}\label{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!find@{find}}
+\index{find@{find}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}}]{start,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00063}{63}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{feladat__2-7_8c_a5ead309ccd9d4778a9e357c73858d5f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba}\label{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!free\_list@{free\_list}}
+\index{free\_list@{free\_list}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{free\_list()}{free\_list()}}
+{\footnotesize\ttfamily void free\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}}]{start }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00034}{34}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{feladat__2-7_8c_af58faff9368c6087121a3a9c64fd3cba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44}\label{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!len@{len}}
+\index{len@{len}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{len()}{len()}}
+{\footnotesize\ttfamily int len (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}}]{start }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00026}{26}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{feladat__2-7_8c_ae74803f60b344a884fad9b9df2bc7c44_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a}\label{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!lista\_elejere\_beszur@{lista\_elejere\_beszur}}
+\index{lista\_elejere\_beszur@{lista\_elejere\_beszur}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{lista\_elejere\_beszur()}{lista\_elejere\_beszur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} lista\+\_\+elejere\+\_\+beszur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}}]{start,  }\item[{int}]{uj }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00042}{42}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{feladat__2-7_8c_a185e6d9697c0247e1f2693ca0ae0c81a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba}\label{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!lista\_letrehoz@{lista\_letrehoz}}
+\index{lista\_letrehoz@{lista\_letrehoz}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{lista\_letrehoz()}{lista\_letrehoz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*} lista\+\_\+letrehoz (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00012}{12}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{feladat__2-7_8c_ae30ca2a76d927e80742e3b62bdc7aeba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186}\label{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!lista\_vegere\_beszur@{lista\_vegere\_beszur}}
+\index{lista\_vegere\_beszur@{lista\_vegere\_beszur}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{lista\_vegere\_beszur()}{lista\_vegere\_beszur()}}
+{\footnotesize\ttfamily void lista\+\_\+vegere\+\_\+beszur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_elem}{Lista\+Elem}} \texorpdfstring{$\ast$}{*}}]{start,  }\item[{int}]{uj }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00049}{49}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{feladat__2-7_8c_a13627d361c1c888d60ce5907a64c6186_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+\index{feladat\_2-\/7.c@{feladat\_2-\/7.c}!main@{main}}
+\index{main@{main}!feladat\_2-\/7.c@{feladat\_2-\/7.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{feladat__2-7_8c_source_l00075}{75}} of file \mbox{\hyperlink{feladat__2-7_8c_source}{feladat\+\_\+2-\/7.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{feladat__2-7_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}

@@ -87,7 +87,7 @@ build CMakeFiles/NHF.dir/source_reader.c.obj: C_COMPILER__NHF_unscanned_Debug D$
 
 build NHF.exe: C_EXECUTABLE_LINKER__NHF_Debug CMakeFiles/NHF.dir/main.c.obj CMakeFiles/NHF.dir/console.c.obj CMakeFiles/NHF.dir/ini_reader.c.obj CMakeFiles/NHF.dir/source_reader.c.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_gfx  -lmingw32  -lSDL2main  -lSDL2  -lSDL2_ttf  -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lmingw32  -lSDL2main  -lSDL2  -lSDL2_gfx  -lSDL2_ttf  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_gfx  -lmingw32  -lSDL2main  -lSDL2  -lSDL2_ttf  -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lmingw32  -lSDL2main  -lSDL2  -lregex  -ltre  -lintl  -lSDL2_gfx  -lSDL2_ttf  -lSDL2_image  -lregex  -ltre  -lintl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\NHF.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

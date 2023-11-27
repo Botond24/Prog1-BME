@@ -20,12 +20,12 @@ int main(int argc, char** argv) {
     }
     if (read_ini(theme_file, theme) == -1) theme = &default_theme;
     SDL_Window *window = SDL_CreateWindow("Source to Flow", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
-    windowRef = GetHwnd(window);
-    ActivateMenu(windowRef);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
     SDL_Surface *surface = SDL_CreateRGBSurface(1,640,480,32,0,0,0,0);
     SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
     SDL_FreeSurface(surface);
+    windowRef = GetHwnd(window);
+    ActivateMenu(windowRef);
     SDL_EventState(SDL_SYSWMEVENT, SDL_ENABLE);
     if (input_type == file_type_c){
         root = read_source(input_file);
@@ -52,9 +52,9 @@ int main(int argc, char** argv) {
                             break;
                         case ID_OPEN_FILE:
                             ;
-                            temp = file_open_dialog(windowRef,L"Source file",L"*.c,*.h");
+                            temp = file_open_dialog(windowRef,L"Source file",L"*.c");
                             if (temp == NULL) break;
-                            free(input_file);
+                            //free(input_file);
                             input_file = temp;
                             input_type = ends_with(input_file);
                             root = read_source(input_file);
@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
                             ;
                             temp = file_save_dialog(windowRef);
                             if (temp == NULL) break;
-                            free(output_file);
+                            //free(output_file);
                             output_file = temp;
                             output_type = ends_with(output_file);
                             //printf("%s", output_file);

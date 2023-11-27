@@ -5,4 +5,10 @@
     <option name="pathToExecutable" value="C:\Users\sziha\AppData\Local\Programs\Python\Python39\Scripts\black.exe" />
   </component>
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/html" />
+      <file path="$PROJECT_DIR$/latex" />
+    </excludeRoots>
+  </component>
 </project>

@@ -1,3 +1,0 @@
-D:/Documents/Prog1-BME/NHF/cmake-build-debug/CMakeFiles/NHF.dir
-D:/Documents/Prog1-BME/NHF/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Documents/Prog1-BME/NHF/cmake-build-debug/CMakeFiles/rebuild_cache.dir

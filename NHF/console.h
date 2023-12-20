@@ -5,6 +5,7 @@
 #ifndef NHF_CONSOLE_H
 #define NHF_CONSOLE_H
 #include "types.h"
+
 /**
  * @brief This function is used to initialize  from the console
  * @param argc argument_cont from main
@@ -14,6 +15,7 @@
  * @return 0 if success, -1 if error
  */
 int init_console(int argc, char** argv, char* theme_file, char* output_file, char* in_file);
+
 /**
  * @brief This function is used to get the file type
  * @param file file path

@@ -11,7 +11,7 @@
 int read_ini(const char *filename, theme_t *theme) {
     FILE *fp = fopen(filename, "r");
     if (fp == NULL) {
-        fprintf(stderr,"Couldn't open file");
+        fprintf(stderr,"Couldn't open file @ line %d of %s\n", __LINE__, __FILE__);
         return -1;
     }
     mapping_t mappings_sc[2];
@@ -24,7 +24,7 @@ int read_ini(const char *filename, theme_t *theme) {
             {"main", &(theme->main_)},
     };
     //printf("file open\n") ;
-    char line[256]; //if context == -1 go to next line else check subcontext and add to theme
+    char line[256]; //if type == -1 go to next line else check subcontext and add to theme
     colour_t *context = NULL;
     SDL_Colour *subContext = NULL;
     while (fgets(line, 256, fp) != NULL) {
@@ -41,7 +41,7 @@ int read_ini(const char *filename, theme_t *theme) {
                 }
             }
             if (context == NULL) {
-                fprintf(stderr, "Unknown context: %s\n", name);
+                fprintf(stderr, "Unknown type: %s @ line %d of %s\n", name, __LINE__, __FILE__);
             }
             mappings_sc[0].key = "background";
             mappings_sc[0].value = &(context->background);
@@ -66,7 +66,7 @@ int read_ini(const char *filename, theme_t *theme) {
                 }
             }
             if (subContext == NULL) {
-                fprintf(stderr, "Unknown sub context: %s\n", value);
+                fprintf(stderr, "Unknown sub type: %s @ line %d of %s\n", value, __LINE__, __FILE__);
             }
             value = strtok(NULL, "=");
             while (isspace(*value))
@@ -76,13 +76,6 @@ int read_ini(const char *filename, theme_t *theme) {
     }
     fclose(fp);
     return 0;
-}
-
-void stoLower(char *str) {
-    while (*str != '\0') {
-        *str = (char) tolower(*str);
-        str++;
-    }
 }
 
 void set_rgba(char *hex, SDL_Colour *colour) {

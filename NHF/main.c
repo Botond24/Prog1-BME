@@ -1,40 +1,49 @@
 #include "main.h"
 
 int main(int argc, char** argv) {
-    char *theme_file = "theme.ini";
-    char *input_file = "test.c";
-    char *output_file = "test";
-    theme_t *theme = &default_theme;
-    printf("%u %u %u", theme->main_.background.r, theme->main_.background.g, theme->main_.background.b);
+    debugmalloc_log_file("debugmalloc.log");
+    char *theme_file = malloc(1);
+    char *input_file = malloc(1);
+    char *output_file = malloc(1);
     file_type_e output_type;
-    file_type_e input_type;
+
     node_t *root = NULL;
-    int quit = 0;
+    box_t *boxes = (box_t*)malloc(sizeof(box_t));
+    int box_count = 0;
+    graphics_t graphics;
+    graphics.theme = &default_theme;
+
     HWND windowRef;
     SDL_Event event;
+    int quit = 0;
 
     if (argc != 1){
         if(init_console(argc, argv, theme_file, output_file, input_file) == -1) return -1;
         output_type = ends_with(output_file);
-        input_type = ends_with(input_file);
     }
-    if (read_ini(theme_file, theme) == -1) theme = &default_theme;
+
+    //if (read_ini(theme_file, graphics.theme) == -1) graphics.theme = &default_theme;
+
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        SDL_Log("Nem indithato az SDL: %s", SDL_GetError());
+        exit(1);
+    }
     SDL_Window *window = SDL_CreateWindow("Source to Flow", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
-    SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
-    SDL_Surface *surface = SDL_CreateRGBSurface(1,640,480,32,0,0,0,0);
-    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
-    SDL_FreeSurface(surface);
+    if (initGraphics(&graphics, window) == -1) {
+        SDL_Log("Nem indithato az SDL: %s", SDL_GetError());
+    }
     windowRef = GetHwnd(window);
+    SDL_Texture *texture = SDL_CreateTexture(graphics.renderer, graphics.pixel_format, SDL_TEXTUREACCESS_TARGET, 640, 480);
+    SDL_SetRenderTarget(graphics.renderer, texture);
     ActivateMenu(windowRef);
+
     SDL_EventState(SDL_SYSWMEVENT, SDL_ENABLE);
-    if (input_type == file_type_c){
-        root = read_source(input_file);
-    }
-    if (output_type == file_type_c){
-        fprintf(stderr,"HOW");
-    }
+
+    redraw(&graphics, boxes, box_count);
+
+
     while (!quit) {
-        SDL_PollEvent(&event);
+        SDL_WaitEvent(&event);
         switch (event.type) {
             case SDL_WINDOWEVENT_CLOSE:
                 event.type = SDL_QUIT;
@@ -51,22 +60,23 @@ int main(int argc, char** argv) {
                             quit = 1;
                             break;
                         case ID_OPEN_FILE:
-                            ;
                             temp = file_open_dialog(windowRef,L"Source file",L"*.c");
                             if (temp == NULL) break;
                             //free(input_file);
                             input_file = temp;
-                            input_type = ends_with(input_file);
                             root = read_source(input_file);
+                            box_count = initBoxes(&graphics, root, boxes);
                             //printf("%s", input_file);
                             break;
                         case ID_SAVE_FLOW:
-                            ;
                             temp = file_save_dialog(windowRef);
                             if (temp == NULL) break;
-                            //free(output_file);
+                            free(output_file);
                             output_file = temp;
+                            output_file[strlen(output_file)-4] = '\0';
+                            //printf("%s", output_file);
                             output_type = ends_with(output_file);
+                            saveToFile(&graphics, output_file, output_type);
                             //printf("%s", output_file);
                             break;
                         case ID_LOAD_THEME:
@@ -74,47 +84,87 @@ int main(int argc, char** argv) {
                             if (temp == NULL) break;
                             free(theme_file);
                             theme_file = temp;
-                            if (read_ini(theme_file, theme) == -1){
-                                theme = &default_theme;
+                            if (read_ini(theme_file, graphics.theme) == -1){
+                                graphics.theme = &default_theme;
                                 SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Theme error", "Couldn't load theme", window);
                                 break;
                             }
                             break;
                         case ID_RESET_THEME:
-                            theme = &default_theme;
+                            graphics.theme = &default_theme;
                             //TODO: redraw call
                             break;
                         case ID_ZOOM_IN:
+                            graphics.scale += 0.1;
+                            SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
                             break;
                         case ID_ZOOM_OUT:
+                            graphics.scale -= 0.1;
+                            SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
                             break;
                         case ID_ZOOM_RESET:
+                            graphics.scale = 1;
+                            SDL_RenderSetScale(graphics.renderer, 1, 1);
                             break;
                         default:
                             break;
                     }
                 }
                 break;
+            case SDL_KEYDOWN:
+                if (event.key.keysym.sym == SDLK_PLUS || event.key.keysym.sym == SDLK_KP_PLUS){
+                    graphics.scale += 0.1;
+                    SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
+                }
+                else if (event.key.keysym.sym == SDLK_MINUS || event.key.keysym.sym == SDLK_KP_MINUS){
+                    graphics.scale -= 0.1;
+                    SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
+                }
+                break;
+            case SDL_MOUSEWHEEL:
+                if (event.wheel.y > 0){
+                    graphics.scale += 0.1;
+                    SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
+                }
+                else if (event.wheel.y < 0){
+                    graphics.scale -= 0.1;
+                    SDL_RenderSetScale(graphics.renderer, graphics.scale, graphics.scale);
+                }
+            default:
+                break;
         }
-
+        redraw(&graphics, boxes, box_count);
         //SDL_SetRenderDrawColor(renderer, theme->main_.background.r, theme->main_.background.g, theme->main_.background.b, theme->main_.background.a);
         //SDL_RenderClear(renderer);
-        SDL_RenderPresent(renderer);
+        SDL_RenderPresent(graphics.renderer);
     }
-    SDL_DestroyTexture(texture);
-    SDL_DestroyRenderer(renderer);
+    SDL_DestroyRenderer(graphics.renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
+    freeBoxes(boxes, box_count);
+    free(theme_file);
+    free(input_file);
+    free(output_file);
     //free(theme);
     //free(input_file);
     //free(output_file);
-    free(root);
+    freeLinkedList(root);
     return 0;
 }
 
 HWND GetHwnd(SDL_Window *window){
+    ///NEEDED FOR SOME REASON
+    SDL_version *ver = malloc(sizeof(SDL_version));
+    SDL_GetVersion(ver);
+    //printf("%d.%d.%d",ver->major,ver->minor,ver->patch);
     SDL_SysWMinfo windowInfo;
-    if(!SDL_GetWindowWMInfo(window,&windowInfo)) return NULL;
+    int success = SDL_GetWindowWMInfo(window,&windowInfo);
+    //printf("%d.%d.%d",windowInfo.version.major,windowInfo.version.minor,windowInfo.version.patch);
+    if (!success){
+        printf("SDL_GetWindowWMInfo failed");
+        SDL_Log("Nem indithato az SDL: %s", SDL_GetError());
+    }
+    free(ver);
     return windowInfo.info.win.window;
 }
 
@@ -133,8 +183,8 @@ void ActivateMenu(HWND windowRef)
 
     AppendMenu(hView, MF_STRING, ID_LOAD_THEME, "Load Theme");
     AppendMenu(hView, MF_STRING, ID_RESET_THEME, "Reset Theme");
-    AppendMenu(hView, MF_STRING, ID_ZOOM_IN, "Zoom In");
-    AppendMenu(hView, MF_STRING, ID_ZOOM_OUT, "Zoom Out");
+    AppendMenu(hView, MF_STRING, ID_ZOOM_IN, "Zoom In (+)");
+    AppendMenu(hView, MF_STRING, ID_ZOOM_OUT, "Zoom Out (-)");
     AppendMenu(hView, MF_STRING, ID_ZOOM_RESET, "Zoom Reset");
 
     SetMenu(windowRef, hMenuBar);

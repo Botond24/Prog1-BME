@@ -45,10 +45,6 @@ file_type_e ends_with(char* file)
             return file_type_jpg;
         else if (strcmp(fileExt, ".png") == 0)
             return file_type_png;
-        else if (strcmp(fileExt, ".c") == 0)
-            return file_type_c;
-        else if (strcmp(fileExt, ".h") == 0)
-            return file_type_h;
         /*else if (strcmp(fileExt, "md") == 0)
             return file_type_md;*/
     }

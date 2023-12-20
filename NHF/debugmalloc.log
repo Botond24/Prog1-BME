@@ -1,0 +1,851 @@
+
+********************************************************
+* MEMORIASZIVARGAS VAN A PROGRAMBAN!!!
+********************************************************
+
+** DEBUGMALLOC DUMP ************************************
+** 1/114. rekord:
+  000000000268a010, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:16, malloc(sizeof(node_t *))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 2/114. rekord:
+  0000000002698020, 8 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 6f 70 74 61 72 67 00                            optarg.        
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 3/114. rekord:
+  00000000026d40a0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  7d 20 20 20 20 72 65 74 75 72 6e 20 44 45 46 41   }    return DEFA
+      0010  55 4c 54 5f 46 49 4c 45 5f 54 59 50 45 00 00 4b   ULT_FILE_TYPE..K
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 4/114. rekord:
+  00000000026d10a0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 5/114. rekord:
+  00000000026d00b0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 6/114. rekord:
+  00000000026b40b0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:172, malloc(100+1)
+      0000  73 74 72 63 70 79 4b 00 4b 4b 4b 4b 4b 4b 4b 4b   strcpyK.KKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 7/114. rekord:
+  00000000027010d0, 85 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 22 4f 70 74 69 6f 6e 20 2d 25 63 20 72 65 71    "Option -%c req
+      0010  75 69 72 65 73 20 61 6e 20 61 72 67 75 6d 65 6e   uires an argumen
+      0020  74 2e 5c 6e 22 2c 20 6f 70 74 6f 70 74 29 20 3d   t.\n", optopt) =
+      0030  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+** 8/114. rekord:
+  00000000026cd0f0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:326, malloc(100 + 1)
+      0000  69 66 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   if.KKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 9/114. rekord:
+  00000000026ae160, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 10/114. rekord:
+  00000000026be190, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 11/114. rekord:
+  00000000026d31b0, 37 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:388, malloc(len)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  3d 20 30 29 20 20 20 20 20 20 20 20 20 20 20 20   = 0)            
+      0010  72 65 74 75 72 6e 20 66 69 6c 65 5f 74 79 70 65   return file_type
+      0020  5f 70 6e 67 3b                                    _png;           
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 12/114. rekord:
+  00000000027051d0, 27 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 7d 20 20 20 20 72 65 74 75 72 6e 20 30 20 3d    }    return 0 =
+      0010  20 20 20 20 20 20 20 20 7d 0a 00                          }..     
+** 13/114. rekord:
+  00000000026b51d0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 14/114. rekord:
+  00000000027011e0, 1360 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:39, realloc((i + 1) * sizeof(box_t))
+      0000  00 00 00 00 00 00 00 00 ffffff81 00 00 00 12 00 00 00   ................
+      0010  00 00 00 00 4b 4b 4b 4b 50 49 6d 02 00 00 00 00   ....KKKKPIm.....
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 00 00 00 00 00 00 00 00   KKKKKKKK........
+      0030  46 00 00 00 12 00 00 00 02 00 00 00 4b 4b 4b 4b   F...........KKKK
+** 15/114. rekord:
+  00000000026cf1e0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 16/114. rekord:
+  00000000026cc200, 82 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+      0010  20 20 20 66 70 72 69 6e 74 66 28 73 74 64 65 72      fprintf(stder
+      0020  72 2c 00 22 4f 70 74 69 6f 6e 20 2d 25 63 20 72   r,."Option -%c r
+      0030  65 71 75 69 72 65 73 20 61 6e 20 61 72 67 75 6d   equires an argum
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   ......KKKKKKKKKK
+** 17/114. rekord:
+  0000000002704220, 74 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 22 55 6e 6b 6e 6f 77 6e 20 6f 70 74 69 6f 6e    "Unknown option
+      0010  20 60 2d 25 63 27 2e 5c 6e 22 2c 20 6f 70 74 6f    `-%c'.\n", opto
+      0020  70 74 29 20 3d 20 20 20 20 20 20 20 20 20 20 20   pt) =           
+      0030  20 20 20 20 20 20 20 20 20 66 70 72 69 6e 74 66            fprintf
+** 18/114. rekord:
+  00000000026a1220, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  63 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   c..KKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 19/114. rekord:
+  00000000026be250, 27 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 72                  r
+      0010  65 74 75 72 6e 00 2d 31 3b 00 00                  eturn.-1;..     
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 20/114. rekord:
+  00000000026bd280, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 21/114. rekord:
+  00000000026ca290, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:172, malloc(100+1)
+      0000  73 74 72 63 70 79 4b 00 4b 4b 4b 4b 4b 4b 4b 4b   strcpyK.KKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 22/114. rekord:
+  00000000027002b0, 95 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 63 6f 6e 73 6f 6c 65 20 2d 74 20 3c 74 68 65    console -t <the
+      0010  6d 65 5f 66 69 6c 65 3e 20 2d 6f 20 3c 6f 75 74   me_file> -o <out
+      0020  70 75 74 5f 66 69 6c 65 3e 20 2d 69 20 3c 69 6e   put_file> -i <in
+      0030  70 75 74 5f 66 69 6c 65 3e 5c 6e 22 29 20 3d 20   put_file>\n") = 
+** 23/114. rekord:
+  00000000026ce2e0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 24/114. rekord:
+  00000000026b4310, 7 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 4b                              strcpyK         
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 25/114. rekord:
+  00000000026cb330, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 26/114. rekord:
+  00000000026d03a0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 27/114. rekord:
+  00000000026d33d0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 28/114. rekord:
+  00000000026d13d0, 7 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:384, malloc(strlen(declare))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  66 69 6c 65 45 78 74                              fileExt         
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 29/114. rekord:
+  00000000026993f0, 10 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 69 6e 74 00 63 3b 00                        int.c;.      
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 30/114. rekord:
+  00000000026cc450, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  22 4f 70 74 69 6f 6e 20 2d 25 63 20 72 65 71 75   "Option -%c requ
+      0010  69 72 65 73 20 61 6e 20 61 72 67 75 6d 65 6e 74   ires an argument
+      0020  2e 5c 6e 22 2c 20 6f 70 74 6f 70 74 29 00 00 4b   .\n", optopt)..K
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 31/114. rekord:
+  00000000026b3470, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 32/114. rekord:
+  00000000026d04b0, 35 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:135, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  66 69 6c 65 5f 74 79 70 65 5f 65 00 65 6e 64 73   file_type_e.ends
+      0010  5f 77 69 74 68 00 00 00 00 00 00 00 00 00 00 00   _with...........
+      0020  00 00 00                                          ...             
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 33/114. rekord:
+  00000000027044e0, 1 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:40, malloc(1)
+      0000  00                                                .               
+** 34/114. rekord:
+  00000000026ce4e0, 71 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+      0010  20 20 20 66 70 72 69 6e 74 66 28 73 74 64 65 72      fprintf(stder
+      0020  72 2c 00 22 55 6e 6b 6e 6f 77 6e 20 6f 70 74 69   r,."Unknown opti
+      0030  6f 6e 20 60 2d 25 63 27 2e 5c 6e 22 2c 20 6f 70   on `-%c'.\n", op
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 35/114. rekord:
+  00000000026ca4f0, 7 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 4b                              strcpyK         
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 36/114. rekord:
+  00000000026974f0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 37/114. rekord:
+  00000000026d4530, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 38/114. rekord:
+  00000000026d2530, 24 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:384, malloc(strlen(declare))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  28 73 74 72 63 6d 70 28 66 69 6c 65 45 78 74 2c   (strcmp(fileExt,
+      0010  20 22 2e 6a 70 67 22 29                            ".jpg")        
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 39/114. rekord:
+  00000000026d35d0, 40 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+      0010  20 20 20 72 65 74 75 72 6e 00 66 69 6c 65 5f 74      return.file_t
+      0020  79 70 65 5f 6d 64 3b 00                           ype_md;.        
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 40/114. rekord:
+  00000000026d15d0, 20 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:388, malloc(len)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 73 74 72 72 63 68 72 28 66 69 6c 65 2c 20 27    strrchr(file, '
+      0010  2e 27 29 3b                                       .');            
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 41/114. rekord:
+  00000000026ce720, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  22 55 6e 6b 6e 6f 77 6e 20 6f 70 74 69 6f 6e 20   "Unknown option 
+      0010  60 2d 25 63 27 2e 5c 6e 22 2c 20 6f 70 74 6f 70   `-%c'.\n", optop
+      0020  74 29 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   t)..KKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 42/114. rekord:
+  00000000026b4720, 12 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:440, malloc(strlen(arg1) + 1)
+      0000  6f 75 74 70 75 74 5f 66 69 6c 65 00               output_file.    
+** 43/114. rekord:
+  00000000026d4730, 13 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 63 20 3d 20 20 20 20 69 6e 74 0a 00             c =    int..   
+** 44/114. rekord:
+  00000000026d2740, 37 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:388, malloc(len)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  3d 20 30 29 20 20 20 20 20 20 20 20 20 20 20 20   = 0)            
+      0010  72 65 74 75 72 6e 20 66 69 6c 65 5f 74 79 70 65   return file_type
+      0020  5f 6a 70 67 3b                                    _jpg;           
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 45/114. rekord:
+  00000000026ff770, 16 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 63 61 73 65 20 27 6f 27 3a 0a 00   case case 'o':..
+** 46/114. rekord:
+  000000000268a790, 94 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:135, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  69 6e 74 00 69 6e 69 74 5f 63 6f 6e 73 6f 6c 65   int.init_console
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 4b 4b 4b 4b 4b   ...........KKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 47/114. rekord:
+  00000000026977b0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:172, malloc(100+1)
+      0000  73 74 72 63 70 79 4b 00 4b 4b 4b 4b 4b 4b 4b 4b   strcpyK.KKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 48/114. rekord:
+  00000000026cd7d0, 82 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+      0010  20 20 20 66 70 72 69 6e 74 66 28 73 74 64 65 72      fprintf(stder
+      0020  72 2c 00 22 4f 70 74 69 6f 6e 20 2d 25 63 20 72   r,."Option -%c r
+      0030  65 71 75 69 72 65 73 20 61 6e 20 61 72 67 75 6d   equires an argum
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   ......KKKKKKKKKK
+** 49/114. rekord:
+  00000000026d37f0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  66 69 6c 65 5f 74 79 70 65 5f 6d 64 00 00 4b 4b   file_type_md..KK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 50/114. rekord:
+  00000000026b5800, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 51/114. rekord:
+  00000000026cf810, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 52/114. rekord:
+  00000000026b2840, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 53/114. rekord:
+  00000000026ff870, 29 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 2d 31 20 3d 20 20 20 20 20 20 20 20 20 20 20    -1 =           
+      0010  20 20 20 20 20 72 65 74 75 72 6e 0a 00                 return..   
+** 54/114. rekord:
+  00000000027048a0, 33 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 66 69 6c 65 45 78 74 20 3d 20 20 73 74 72 72    fileExt =  strr
+      0010  63 68 72 28 66 69 6c 65 2c 20 27 2e 27 29 3b 0a   chr(file, '.');.
+      0020  00                                                .               
+** 55/114. rekord:
+  00000000026bd8b0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 56/114. rekord:
+  00000000027008c0, 7 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  65 6c 73 65 20 0a 00                              else ..         
+** 57/114. rekord:
+  00000000026d08d0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:326, malloc(100 + 1)
+      0000  65 6e 64 73 5f 77 69 74 68 00 4b 4b 4b 4b 4b 4b   ends_with.KKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 58/114. rekord:
+  00000000026cc8e0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 59/114. rekord:
+  00000000026ca900, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:440, malloc(strlen(arg1) + 1)
+      0000  69 6e 5f 66 69 6c 65 00                           in_file.        
+** 60/114. rekord:
+  00000000026b4920, 8 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 6f 70 74 61 72 67 00                            optarg.        
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 61/114. rekord:
+  00000000026d4950, 20 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  69 6e 74 20 69 6e 69 74 5f 63 6f 6e 73 6f 6c 65   int init_console
+      0010  28 29 0a 00                                       ()..            
+** 62/114. rekord:
+  00000000026ff960, 16 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 63 61 73 65 20 27 74 27 3a 0a 00   case case 't':..
+** 63/114. rekord:
+  00000000026d2960, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 64/114. rekord:
+  00000000026cb960, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 65/114. rekord:
+  0000000002704980, 56 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  69 66 20 73 74 72 63 6d 70 28 66 69 6c 65 45 78   if strcmp(fileEx
+      0010  74 2c 20 66 69 6c 65 29 20 21 3d 20 30 20 7c 7c   t, file) != 0 ||
+      0020  20 66 69 6c 65 45 78 74 20 21 3d 20 4e 55 4c 4c    fileExt != NULL
+      0030  29 20 20 20 20 7b 0a 00                           )    {..        
+** 66/114. rekord:
+  0000000002700980, 16 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 63 61 73 65 20 27 3f 27 3a 0a 00   case case '?':..
+** 67/114. rekord:
+  00000000026a1980, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:326, malloc(100 + 1)
+      0000  69 6e 69 74 5f 63 6f 6e 73 6f 6c 65 00 4b 4b 4b   init_console.KKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 68/114. rekord:
+  00000000026b5a00, 24 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:166, malloc(sizeof(char) * (match.rm_eo - match.rm_so))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 00 69 6e 5f 66 69 6c 65 00 20   strcpy.in_file. 
+      0010  6f 70 74 61 72 67 29 3b                           optarg);        
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 69/114. rekord:
+  00000000026cfa10, 27 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 7d 00 7d 20 20 20 20 72 65          }.}    re
+      0010  74 75 72 6e 20 30 3b 00 00 00 00                  turn 0;....     
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 70/114. rekord:
+  0000000002697a10, 7 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 4b                              strcpyK         
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 71/114. rekord:
+  00000000026cda20, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  22 4f 70 74 69 6f 6e 20 2d 25 63 20 72 65 71 75   "Option -%c requ
+      0010  69 72 65 73 20 61 6e 20 61 72 67 75 6d 65 6e 74   ires an argument
+      0020  2e 5c 6e 22 2c 20 6f 70 74 6f 70 74 29 00 00 4b   .\n", optopt)..K
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 72/114. rekord:
+  0000000002698a40, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 73/114. rekord:
+  0000000002704a70, 67 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 28 73 74 72 63 6d 70 28 66 69 6c 65 45 78 74    (strcmp(fileExt
+      0010  2c 20 22 2e 6a 70 67 22 29 20 3d 20 3d 20 30 29   , ".jpg") = = 0)
+      0020  20 20 20 20 20 20 20 20 20 20 20 20 72 65 74 75               retu
+      0030  72 6e 20 66 69 6c 65 5f 74 79 70 65 5f 6a 70 67   rn file_type_jpg
+** 74/114. rekord:
+  00000000026b3aa0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 75/114. rekord:
+  00000000026bdab0, 92 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 70                  p
+      0010  72 69 6e 74 66 28 22 55 73 61 67 65 3a 00 63 6f   rintf("Usage:.co
+      0020  6e 73 6f 6c 65 20 2d 74 20 3c 74 68 65 6d 65 5f   nsole -t <theme_
+      0030  66 69 6c 65 3e 20 2d 6f 20 3c 6f 75 74 70 75 74   file> -o <output
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b   .......KKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 76/114. rekord:
+  00000000026c9ad0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 77/114. rekord:
+  00000000026cab00, 8 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:546, malloc((e - s) + 1)
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  20 6f 70 74 61 72 67 00                            optarg.        
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 78/114. rekord:
+  0000000002689b60, 16 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 63 61 73 65 20 27 68 27 3a 0a 00   case case 'h':..
+** 79/114. rekord:
+  0000000002704b70, 25 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  66 69 6c 65 5f 74 79 70 65 5f 65 20 65 6e 64 73   file_type_e ends
+      0010  5f 77 69 74 68 28 29 0a 00                        _with()..       
+** 80/114. rekord:
+  00000000026d1ba0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 81/114. rekord:
+  00000000026cebb0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 82/114. rekord:
+  0000000002705bc0, 70 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 69 66 20 28 73 74 72 63 6d 70 28 66 69 6c 65    if (strcmp(file
+      0010  45 78 74 2c 20 22 2e 70 6e 67 22 29 20 3d 20 3d   Ext, ".png") = =
+      0020  20 30 29 20 20 20 20 20 20 20 20 20 20 20 20 72    0)            r
+      0030  65 74 75 72 6e 20 66 69 6c 65 5f 74 79 70 65 5f   eturn file_type_
+** 83/114. rekord:
+  0000000002703bc0, 14 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 63 61 73 65 20 27 3a 0a 00         case case ':..  
+** 84/114. rekord:
+  000000000264abc0, 1 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/main.c:6, malloc(1)
+      0000  4b                                                K               
+** 85/114. rekord:
+  00000000026ccbd0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 86/114. rekord:
+  0000000002700bf0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  62 72 65 61 6b 3b 0a 00                           break;..        
+** 87/114. rekord:
+  00000000026cfc20, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  7d 20 20 20 20 72 65 74 75 72 6e 20 30 00 00 4b   }    return 0..K
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 88/114. rekord:
+  0000000002698c40, 27 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:166, malloc(sizeof(char) * (match.rm_eo - match.rm_so))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 00 74 68 65 6d 65 5f 66 69 6c   strcpy.theme_fil
+      0010  65 00 20 6f 70 74 61 72 67 29 3b                  e. optarg);     
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 89/114. rekord:
+  00000000026cbc50, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 90/114. rekord:
+  00000000026bcc50, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 91/114. rekord:
+  00000000026d3c80, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 92/114. rekord:
+  0000000002704c90, 15 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  63 61 73 65 20 64 65 66 61 75 6c 74 3a 0a 00      case default:.. 
+** 93/114. rekord:
+  00000000026d4ca0, 21 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  73 77 69 74 63 68 20 73 77 69 74 63 68 20 28 63   switch switch (c
+      0010  29 20 7b 0a 00                                    ) {..           
+** 94/114. rekord:
+  00000000026b3ca0, 28 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:166, malloc(sizeof(char) * (match.rm_eo - match.rm_so))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  73 74 72 63 70 79 00 6f 75 74 70 75 74 5f 66 69   strcpy.output_fi
+      0010  6c 65 00 20 6f 70 74 61 72 67 29 3b               le. optarg);    
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 95/114. rekord:
+  0000000002700cb0, 11 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  65 6c 73 65 20 69 66 28 29 0a 00                  else if()..     
+** 96/114. rekord:
+  0000000002705cc0, 43 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 66 69 6c 65 5f 74 79 70 65 5f 6d 64 20 3d 20    file_type_md = 
+      0010  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+      0020  20 20 20 72 65 74 75 72 6e 0a 00                     return..     
+** 97/114. rekord:
+  00000000026ccce0, 26 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:135, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  65 6c 73 65 00 69 66 00 00 00 00 00 00 00 00 00   else.if.........
+      0010  00 00 00 00 00 00 00 00 00 00                     ..........      
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 98/114. rekord:
+  00000000026cad00, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 99/114. rekord:
+  00000000026bdd00, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  63 6f 6e 73 6f 6c 65 20 2d 74 20 3c 74 68 65 6d   console -t <them
+      0010  65 5f 66 69 6c 65 3e 20 2d 6f 20 3c 6f 75 74 70   e_file> -o <outp
+      0020  75 74 5f 66 69 6c 65 3e 20 2d 69 20 3c 69 6e 70   ut_file> -i <inp
+      0030  75 74 5f 66 69 6c 65 3e 5c 6e 22 29 00 00 4b 4b   ut_file>\n")..KK
+** 100/114. rekord:
+  0000000002700d80, 21 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  69 66 20 6f 70 74 6f 70 74 20 3d 3d 20 27 6f 27   if optopt == 'o'
+      0010  29 20 7b 0a 00                                    ) {..           
+** 101/114. rekord:
+  0000000002697e20, 11 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:440, malloc(strlen(arg1) + 1)
+      0000  74 68 65 6d 65 5f 66 69 6c 65 00                  theme_file.     
+** 102/114. rekord:
+  0000000002703e30, 27 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  73 74 72 63 70 79 4b 28 69 6e 5f 66 69 6c 65 2c   strcpyK(in_file,
+      0010  20 20 6f 70 74 61 72 67 29 0a 00                    optarg)..     
+** 103/114. rekord:
+  00000000026d3e80, 36 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:147, malloc(sizeof(char) * (match.rm_eo - match.rm_so + 1))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  2f 00 7d 20 20 20 20 72 65 74 75 72 6e 20 44 45   /.}    return DE
+      0010  46 41 55 4c 54 5f 46 49 4c 45 5f 54 59 50 45 3b   FAULT_FILE_TYPE;
+      0020  00 00 00 00                                       ....            
+    UTANA kanari: 
+      0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+** 104/114. rekord:
+  0000000002704e90, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  62 72 65 61 6b 3b 0a 00                           break;..        
+** 105/114. rekord:
+  00000000026ffeb0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  62 72 65 61 6b 3b 0a 00                           break;..        
+** 106/114. rekord:
+  00000000026cdeb0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 107/114. rekord:
+  0000000002703f00, 31 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  73 74 72 63 70 79 4b 28 6f 75 74 70 75 74 5f 66   strcpyK(output_f
+      0010  69 6c 65 2c 20 20 6f 70 74 61 72 67 29 0a 00      ile,  optarg).. 
+** 108/114. rekord:
+  0000000002705f20, 36 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 7d 20 20 20 20 72 65 74 75 72 6e 20 44 45 46    }    return DEF
+      0010  41 55 4c 54 5f 46 49 4c 45 5f 54 59 50 45 20 3d   AULT_FILE_TYPE =
+      0020  20 2f 0a 00                                        /..            
+** 109/114. rekord:
+  000000000269ff20, 30 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  73 74 72 63 70 79 4b 28 74 68 65 6d 65 5f 66 69   strcpyK(theme_fi
+      0010  6c 65 2c 20 20 6f 70 74 61 72 67 29 0a 00         le,  optarg)..  
+** 110/114. rekord:
+  00000000026fff70, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  62 72 65 61 6b 3b 0a 00                           break;..        
+** 111/114. rekord:
+  00000000026d2fa0, 27 bajt, kanari: **SERULT**
+  D:/Documents/Prog1-BME/NHF/source_reader.c:384, malloc(strlen(declare))
+    ELOTTE kanari: 
+      0000  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0000  69 66 20 28 73 74 72 63 6d 70 28 66 69 6c 65 45   if (strcmp(fileE
+      0010  78 74 2c 20 22 2e 70 6e 67 22 29                  xt, ".png")     
+    UTANA kanari: 
+      0000  00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   .KKKKKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** 112/114. rekord:
+  00000000026b3fa0, 8 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:670, malloc(sizeof(node_t *)*(size+1))
+      0000  00 00 00 00 00 00 00 00                           ........        
+** 113/114. rekord:
+  0000000002703fd0, 85 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/graphics.c:224, realloc(strlen(a) + strlen(b)+1)
+      0000  20 22 4f 70 74 69 6f 6e 20 2d 25 63 20 72 65 71    "Option -%c req
+      0010  75 69 72 65 73 20 61 6e 20 61 72 67 75 6d 65 6e   uires an argumen
+      0020  74 2e 5c 6e 22 2c 20 6f 70 74 6f 70 74 29 20 3d   t.\n", optopt) =
+      0030  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+** 114/114. rekord:
+  00000000026b2fe0, 101 bajt, kanari: ok
+  D:/Documents/Prog1-BME/NHF/source_reader.c:397, malloc(100+1)
+      0000  2d 31 00 00 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   -1..KKKKKKKKKKKK
+      0010  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0020  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+      0030  4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b 4b   KKKKKKKKKKKKKKKK
+** DEBUGMALLOC DUMP VEGE *******************************

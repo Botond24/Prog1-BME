@@ -6,10 +6,11 @@
 #define NHF_INI_READER_H
 
 #include <SDL_pixels.h>
+#include <SDL2_rotozoom.h>
 #include "types.h"
 
 /**
- * enum for ini file context
+ * enum for ini file type
  */
 typedef enum {
     function,
@@ -19,9 +20,10 @@ typedef enum {
     loop,
     main_
 } context_e;
+
 /**
  * enum for ini file sub_context
- * (in ini documentation is named value, but i use it like another context so it doesnt matter)
+ * (in ini documentation is named value, but i use it like another type so it doesnt matter)
  */
 typedef enum {
     background,

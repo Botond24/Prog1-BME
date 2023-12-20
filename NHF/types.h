@@ -8,8 +8,6 @@
  * Input file enum
  */
 typedef enum {
-    file_type_h, /// header file
-    file_type_c, /// c file
     file_type_jpg, /// jpg file
     file_type_png, /// png file
     //file_type_md, /// <markdown file

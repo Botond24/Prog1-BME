@@ -6,7 +6,8 @@
         "math.h": "c",
         "stdio.h": "c",
         "debugmalloc.h": "c",
-        "regex.h": "c"
+        "regex.h": "c",
+        "conio.h": "c"
     },
     "cmake.configureOnOpen": false
 }

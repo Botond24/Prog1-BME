@@ -3,27 +3,19 @@
 //
 
 #ifndef NHF_MAIN_H
-#define NHF_MAIN_H
-#endif//NHF_MAIN_H
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_syswm.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_version.h>
 #include <SDL_ttf.h>
-#include <SDL_image.h>
 #include "console.h"
 #include "ini_reader.h"
 #include <windows.h>
-#include <SDL_syswm.h>
 #include <shobjidl.h>
 #include "source_reader.h"
 #include "debugmalloc.h"
-
-/**
- * Obvious
- * @param argc
- * @param argv
- * @return
- */
-int main(int argc, char** argv);
+#include "graphics.h"
 
 #define ID_OPEN_FILE 1
 #define ID_SAVE_FLOW 2
@@ -33,6 +25,14 @@ int main(int argc, char** argv);
 #define ID_ZOOM_OUT 6
 #define ID_ZOOM_RESET 7
 #define ID_EXIT 8
+
+/**
+ * Obvious
+ * @param argc
+ * @param argv
+ * @return
+ */
+int main(int argc, char** argv);
 
 /**
  * Gets win32 window handle
@@ -84,3 +84,6 @@ static theme_t default_theme = {
             .background = {.r = 255,.g = 255,.b = 255,.a = 255},
             .text = {.r = 0,.g = 0,.b = 0,.a = 255}}
 };
+
+#define NHF_MAIN_H
+#endif//NHF_MAIN_H
